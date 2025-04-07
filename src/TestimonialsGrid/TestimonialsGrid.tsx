@@ -33,17 +33,23 @@ const TestimonialGrid: React.FC<TestimonialGridProps> = ({
     const elements = containerRef.current?.querySelectorAll('[data-speed]');
     elements?.forEach((el) => {
       const speed = parseFloat(el.getAttribute('data-speed') || '1');
-      gsap.to(el, {
-        y: `${-speed * 100}px`,
-        ease: 'none',
-        scrollTrigger: {
-          trigger: el,
-          start: 'top bottom',
-          scrub: true,
-        },
-      });
+      const offset = speed * 100; // calculates the offset based on data-speed
+      gsap.fromTo(
+        el,
+        { y: offset }, // start position: offset from the natural position
+        {
+          y: 0, // final position
+          ease: 'none',
+          scrollTrigger: {
+            trigger: el,
+            start: 'top bottom',
+            scrub: true,
+          },
+        }
+      );
     });
   }, []);
+  
 
   return (
     <div
@@ -57,7 +63,7 @@ const TestimonialGrid: React.FC<TestimonialGridProps> = ({
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
         {testimonials.map((testimonial) => (
-          <div key={testimonial.id} className="flex" data-speed={testimonial.dataSpeed || "10"}>
+          <div key={testimonial.id} className="flex" data-speed={testimonial.dataSpeed || "1"}>
             <TestimonialCard
               name={testimonial.name}
               text={testimonial.text}
