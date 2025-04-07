@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState, createContext, useContext, JSX } from "react"
-import { IconArrowNarrowLeft, IconArrowNarrowRight, IconX, IconPlus, IconChevronRight } from "@tabler/icons-react"
+import {  IconX, IconPlus, IconChevronRight, IconChevronLeft } from "@tabler/icons-react"
 import { cn } from "@/lib/utils"
 import { motion } from "motion/react"
 import Image, { type ImageProps } from "next/image"
@@ -115,20 +115,20 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
             ))}
           </div>
         </div>
-        <div className="flex justify-end gap-2 mr-10">
+        <div className="flex justify-end gap-2 md:mr-24">
           <button
-            className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
+            className="relative z-40 h-10 w-10 rounded-full bg-[#D2D2D7A3] flex items-center justify-center disabled:opacity-50"
             onClick={scrollLeft}
             disabled={!canScrollLeft}
           >
-            <IconArrowNarrowLeft className="h-6 w-6 text-gray-500" />
+            <IconChevronLeft className="h-8 w-6 text-[#0000008F]" />
           </button>
           <button
-            className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
+            className="relative z-40 h-10 w-10 rounded-full bg-[#D2D2D7A3]  flex items-center justify-center disabled:opacity-50"
             onClick={scrollRight}
             disabled={!canScrollRight}
           >
-            <IconArrowNarrowRight className="h-6 w-6 text-gray-500" />
+            <IconChevronRight className="h-6 w-6 text-[#0000008F]" />
           </button>
         </div>
       </div>
