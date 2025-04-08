@@ -1,5 +1,6 @@
 import Count from "@/components/counter/counts";
 import DuneSuccessSlider from "@/components/DuneSuccessSlider/DuneSuccessSlider";
+import FormComponent from "@/components/FormComponent/FormComponent";
 import HeroBanner from "@/components/HeroBanner/HeroBanner";
 import Layout from "@/components/Layout/Layout";
 import { MapSection } from "@/components/MapSection/Mapsection";
@@ -36,6 +37,9 @@ export default function Home() {
     </section>
     <section>
       <TestimonialGrid  testimonials={testimonials}/>
+    </section>
+    <section>
+      <FormComponent/>
     </section>
     </Layout>
   );

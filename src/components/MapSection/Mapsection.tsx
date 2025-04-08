@@ -17,7 +17,7 @@ const countries: Country[] = [
     name: "United States of America",
     description: "Harvard University, Stanford University",
     color: "bg-[#B388FF]",
-    position: "left-[18%] top-[39%]",
+    position: "left-[24%] top-[39%]",
     image: "/worldMap/americaMap.svg",
   },
   {
@@ -25,7 +25,7 @@ const countries: Country[] = [
     name: "Canada",
     description: "University of Toronto, University of Waterloo",
     color: "bg-[#B388FF]/60",
-    position: "left-[15%] top-[26%]",
+    position: "left-[21%] top-[26%]",
     image: "/worldMap/canadaMap.svg",
   },
   {
@@ -33,7 +33,7 @@ const countries: Country[] = [
     name: "United Kingdom",
     description: "University of Oxford, University of Cambridge",
     color: "bg-[#B388FF]",
-    position: "left-[46%] top-[30%]",
+    position: "left-[46.5%] top-[30%]",
     image: "/worldMap/ukMap.svg",
   },
   {
@@ -41,7 +41,7 @@ const countries: Country[] = [
     name: "Australia",
     description: "Offers affordable education with high academic standards & welcoming immigration policies.",
     color: "bg-[#B388FF]/60",
-    position: "left-[84%] top-[78%]",
+    position: "left-[78.4%] top-[78%]",
     image: "/worldMap/australiaMap.svg",
   },
   {
@@ -49,7 +49,7 @@ const countries: Country[] = [
     name: "New Zealand",
     description: "University of Otago, The University of Auckland",
     color: "bg-[#B388FF]",
-    position: "left-[94%] top-[89%]",
+    position: "left-[86%] top-[89%]",
     image: "/worldMap/newzLandMap.svg",
   },
   {
@@ -65,7 +65,7 @@ const countries: Country[] = [
     name: "France",
     description: "University of Oxford, University of Cambridge",
     color: "bg-[#B388FF]/60",
-    position: "left-[47.3%] top-[35%]",
+    position: "left-[47.7%] top-[35%]",
     image: "/worldMap/franceMap.svg",
   },
   {
@@ -81,7 +81,7 @@ const countries: Country[] = [
     name: "Malaysia",
     description: "Universiti Malaya, Sunway University",
     color: "bg-[#B388FF]/60",
-    position: "left-[77.5%] top-[64%]",
+    position: "left-[72.5%] top-[64%]",
     image: "/worldMap/malaysiaMap.svg",
   },
   {
@@ -97,7 +97,7 @@ const countries: Country[] = [
     name: "Singapore",
     description: "National University of Singapore, Nanyang Technological University",
     color: "bg-[#B388FF]/60",
-    position: "left-[77.9%] top-[60.9%]",
+    position: "left-[72.9%] top-[60.9%]",
     image: "/worldMap/singaporeMap.svg",
   },
 ];
@@ -116,8 +116,8 @@ export function MapSection() {
 
       <div className="relative">
         {/* World Map Background */}
-        <div className="w-full aspect-[2/1]  rounded-xl relative overflow-hidden flex items-center justify-center">
-          <Image src={selectedCountry.image} alt={selectedCountry.name} width={8000} height={800} className=" transition-all duration-300" />
+        <div className="w-full h-[70vh] aspect-[2/1]  rounded-xl relative overflow-hidden flex items-center justify-center">
+          <Image src={selectedCountry.image} alt={selectedCountry.name} width={8000} height={800} className="w-full h-full transition-all duration-300" />
 
           {/* Interactive Dots */}
           <div className="absolute inset-0">

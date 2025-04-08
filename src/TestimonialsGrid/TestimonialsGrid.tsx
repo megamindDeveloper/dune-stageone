@@ -33,17 +33,18 @@ const TestimonialGrid: React.FC<TestimonialGridProps> = ({
     const elements = containerRef.current?.querySelectorAll('[data-speed]');
     elements?.forEach((el) => {
       const speed = parseFloat(el.getAttribute('data-speed') || '1');
-      const offset = speed * 100; // calculates the offset based on data-speed
+      const offset = speed * 500; // increased from 100 to 200 for more pronounced effect
       gsap.fromTo(
         el,
         { y: offset }, // start position: offset from the natural position
         {
           y: 0, // final position
-          ease: 'none',
+          ease: 'power2.out', // added easing for smoother return
+          duration: 0.5, // added duration for faster return
           scrollTrigger: {
             trigger: el,
             start: 'top bottom',
-            scrub: true,
+            scrub: 0.5, // changed from true to 0.5 for faster return
           },
         }
       );
@@ -54,9 +55,9 @@ const TestimonialGrid: React.FC<TestimonialGridProps> = ({
   return (
     <div
       ref={containerRef}
-      className="bg-[#FDFAFE] mx-auto px-4 sm:px-6 lg:px-8 py-12 transition-opacity duration-1000"
+      className="bg-[#FEFEFE] mx-auto px-4 sm:px-6 lg:px-8 py-12 transition-opacity duration-1000"
     >
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
+      <h2 className="text-4xl md:text-5xl font-bold text-center mb-48">
         {title.firstPart}{' '}
         <span className="text-purple-400">{title.highlightedPart}</span>
       </h2>
