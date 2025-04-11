@@ -10,37 +10,36 @@ import { WhyChooseSection } from "@/components/WhyChooseSection/WhyChooseSection
 import { testimonials } from "@/data/testimonials";
 import TestimonialGrid from "@/TestimonialsGrid/TestimonialsGrid";
 
-
 export default function Home() {
   return (
     <Layout>
-    <section>
-      <HeroBanner/>
-    </section>
-    <section>
-      <ServiceSteps/>
-    </section>
-    <section>
-      <Count/>
-    </section>
-    <section>
-      <WhyChooseSection/>
-    </section>
-    <section>
-      <MapSection/>
-    </section>
-    <section>
-      <UniversityPartners/>
-    </section>
-    <section>
-      <DuneSuccessSlider/>
-    </section>
-    <section>
-      <TestimonialGrid  testimonials={testimonials}/>
-    </section>
-    <section>
-      <FormComponent/>
-    </section>
+      <section>
+        <HeroBanner />
+      </section>
+      <section>
+        <ServiceSteps />
+      </section>
+       <section>
+        <Count />
+      </section>
+     <section>
+        <WhyChooseSection />
+      </section>
+      <section>
+        <MapSection />
+      </section>
+      <section>
+        <UniversityPartners />
+      </section>
+      <section>
+        <DuneSuccessSlider />
+      </section>
+      <section>
+        <TestimonialGrid testimonials={testimonials} />
+      </section>
+      <section>
+        <FormComponent />
+      </section>
     </Layout>
   );
 }

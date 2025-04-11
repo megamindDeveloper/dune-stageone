@@ -5,7 +5,7 @@ export default function ServiceSteps() {
   const cards = data.map((card, index) => <Card key={card.src} card={card} index={index} />)
 
   return (
-    <div className="w-full h-full py-20 bg-[#FDFAFE]">
+    <div className="w-full  py-20 bg-[#FDFAFE]">
       <h2 className="max-w-7xl text-center mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
         We've Got You Covered,<span className="text-[#CEB3FE]">From Application to Arrival</span>
       </h2>

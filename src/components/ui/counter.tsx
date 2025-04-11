@@ -8,7 +8,7 @@ interface CounterProps {
   label: string;
 }
 
-export function Counter({ end, duration = 2000, suffix = "+", label }: CounterProps) {
+export function Counter({ end, duration = 1000, suffix = "+", label }: CounterProps) {
   const [count, setCount] = useState(end - 10);
   const [isVisible, setIsVisible] = useState(false);
   const counterRef = useRef<HTMLDivElement>(null);
@@ -60,9 +60,9 @@ export function Counter({ end, duration = 2000, suffix = "+", label }: CounterPr
 
   return (
     <div ref={counterRef} className="text-center p-4">
-      <div className="lg:text-6xl md:text-4xl  font-bold mb-2">
+      <div className="lg:text-6xl md:text-4xl text-2xl font-bold mb-2">
         {count}
-        <span className="lg:text-6xl md:text-4xl ">{suffix}</span>
+        <span className="lg:text-6xl md:text-4xl text-2xl">{suffix}</span>
       </div>
       <div className="text-xl font-extrabold text-[#86868B]">{label}</div>
     </div>
