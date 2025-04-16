@@ -69,7 +69,7 @@ const DuneSuccessSlider: React.FC = () => {
             const videoId = getVideoId(slide.videoUrl);
             return (
               <SwiperSlide key={slide.id} className="!w-[60%]">
-                <div className="relative rounded-3xl overflow-hidden h-[70vh] ">
+                <div className="relative rounded-3xl overflow-hidden h-[55vh] lg:h-[70vh] ">
                   <div className="w-full h-full">
                     <iframe
                       src={`https://www.youtube.com/embed/${videoId}?controls=1`}
@@ -87,7 +87,7 @@ const DuneSuccessSlider: React.FC = () => {
                       <div className="bg-white/20 rounded-full p-2">
                         <Pause className="text-white w-5 h-5" />
                       </div>
-                      <button className="bg-white text-sm px-4 py-2 rounded-full font-medium shadow-md">Watch the Full Video</button>
+                      <button className="bg-white text-sm lg:px-4 lg:py-2 px-2 py-2 rounded-full font-medium shadow-md">Watch the Full Video</button>
                     </div>
                   </div>
                 </div>
@@ -97,7 +97,7 @@ const DuneSuccessSlider: React.FC = () => {
           {/* Navigation Buttons */}
 
           {/* Navigation Buttons - Bottom Left */}
-          <div className="absolute bottom-[-14] left-[19%] flex gap-2 z-10 p-4">
+          <div className="absolute top-[88%] lg:bottom-[-14]  left-0 lg:left-[19%] flex gap-2 z-10 p-4">
             <button ref={prevRef} className="cursor-pointer bg-[#D2D2D7] text-gray-800 p-2 rounded-full shadow-md transition duration-300">
               <ChevronLeft className="w-5 h-5" />
             </button>
@@ -107,7 +107,7 @@ const DuneSuccessSlider: React.FC = () => {
           </div>
 
           {/* Custom Pagination - Bottom Right */}
-          <div className="absolute bottom-0  z-10 p-4 right-[19%] ">
+          <div className="absolute top-[90%]  z-10 p-4 right-[0%] lg:right-[19%] ">
             <div className="custom-swiper-pagination-inner flex items-center gap-2 bg-purple-300/60 px-4 py-2 rounded-full" />
           </div>
         </Swiper>
