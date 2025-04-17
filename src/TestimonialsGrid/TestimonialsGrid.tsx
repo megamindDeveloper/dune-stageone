@@ -8,7 +8,7 @@ import TestimonialCard from '@/TestimonialsCard/TestimonialsCard';
 // Register GSAP plugin
 gsap.registerPlugin(ScrollTrigger);
 
-// Utility function to combine class names (mimicking cn from '@/lib/utils')
+// Utility function to combine class names
 const cn = (...classes: (string | undefined | false)[]) => {
   return classes.filter(Boolean).join(' ');
 };
@@ -133,7 +133,7 @@ const TestimonialGrid: React.FC<TestimonialGridProps> = ({
             >
               {testimonials.map((item) => (
                 <li
-                  className="relative flex h-full max-w-[300px] items-center justify-center"
+                  className="relative flex h-[450px] max-w-[300px] items-center justify-center"
                   key={item.id}
                 >
                   <TestimonialCard

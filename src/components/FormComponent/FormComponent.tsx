@@ -34,8 +34,8 @@ function FormComponent() {
 
   return (
     <div className="min-h-screen bg-[#FEFEFE] flex items-center justify-center p-4">
-      <div className="w-full max-w-6xl bg-white rounded-2xl shadow-lg overflow-hidden flex">
-        <div className="w-1/2 h-[800px] relative">
+      <div className="w-full max-w-6xl bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+        <div className="w-full md:w-1/2 h-[400px] md:h-[800px] relative">
           <Map
             mapboxAccessToken="pk.eyJ1IjoiamFtc2hhZDEiLCJhIjoiY2xrOXNsdTR0MDBoZDNkbXcxNXc1YnYybCJ9.7mKn2TGyJPQ5p1cIIss9ow"
             initialViewState={{
@@ -50,10 +50,12 @@ function FormComponent() {
           </Map>
         </div>
 
-        <div className="w-1/2 p-8 flex flex-col justify-center ml-8">
-          <h2 className="text-4xl font-bold text-[#1e1b4b] mb-8">Ready to See your Study Dreams take Flight?</h2>
+        <div className="w-full md:w-1/2 p-6 md:p-8 flex flex-col justify-center md:ml-8">
+          <h2 className="text-2xl md:text-4xl font-bold text-[#1e1b4b] mb-6 md:mb-8">
+            Ready to See your Study Dreams take Flight?
+          </h2>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
             <div>
               <input
                 type="text"
@@ -61,7 +63,7 @@ function FormComponent() {
                 placeholder="Your Name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border-b border-gray-300 focus:border-purple-500 focus:outline-none"
+                className="w-full px-4 py-2 md:py-3 border-b border-gray-300 focus:border-purple-500 focus:outline-none text-sm md:text-base"
                 required
               />
             </div>
@@ -73,7 +75,7 @@ function FormComponent() {
                 placeholder="Your Email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border-b border-gray-300 focus:border-purple-500 focus:outline-none"
+                className="w-full px-4 py-2 md:py-3 border-b border-gray-300 focus:border-purple-500 focus:outline-none text-sm md:text-base"
                 required
               />
             </div>
@@ -85,7 +87,7 @@ function FormComponent() {
                 placeholder="Your Phone Number"
                 value={formData.phone}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border-b border-gray-300 focus:border-purple-500 focus:outline-none"
+                className="w-full px-4 py-2 md:py-3 border-b border-gray-300 focus:border-purple-500 focus:outline-none text-sm md:text-base"
                 required
               />
             </div>
@@ -97,7 +99,7 @@ function FormComponent() {
                 placeholder="Preferred Study Destination"
                 value={formData.destination}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border-b border-gray-300 focus:border-purple-500 focus:outline-none"
+                className="w-full px-4 py-2 md:py-3 border-b border-gray-300 focus:border-purple-500 focus:outline-none text-sm md:text-base"
                 required
               />
             </div>
@@ -108,15 +110,18 @@ function FormComponent() {
                 placeholder="Your Enquiry"
                 value={formData.enquiry}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border-b border-gray-300 focus:border-purple-500 focus:outline-none resize-none"
+                className="w-full px-4 py-2 md:py-3 border-b border-gray-300 focus:border-purple-500 focus:outline-none resize-none text-sm md:text-base"
                 maxLength={250}
                 required
               />
-              <span className="absolute bottom-2 right-2 text-sm text-gray-400">{charCount}/250</span>
+              <span className="absolute bottom-2 right-2 text-xs md:text-sm text-gray-400">{charCount}/250</span>
             </div>
 
             <div className="flex justify-center">
-              <button type="submit" className="w-32 bg-[#9583FE] text-white py-3 px-6 rounded-full hover:bg-[#6d28d9] transition-colors">
+              <button
+                type="submit"
+                className="w-32 bg-[#9583FE] text-white py-2 md:py-3 px-6 rounded-full hover:bg-[#6d28d9] transition-colors text-sm md:text-base"
+              >
                 Submit
               </button>
             </div>
