@@ -184,7 +184,7 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
         {/* Front of card */}
         <div className="absolute inset-0 rounded-3xl bg-[#B298FE] overflow-hidden justify-between flex flex-col items-start [backface-visibility:hidden]">
           <div className="space-y-4 p-4 md:p-8">
-            <h3 className="text-white text-xl md:text-4xl font-bold leading-tight">{card.title}</h3>
+            <h3 className="text-white text-2xl md:text-[36px] font-bold leading-tight">{card.title}</h3>
           </div>
 
           <div className="w-full flex items-center justify-center">
@@ -199,15 +199,15 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
         {/* Back of card */}
         <div className="absolute inset-0 rounded-3xl bg-[#B298FE] md:p-8 p-4 py-auto [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col">
           <div className="space-y-4">
-            <h3 className="text-white text-xl md:text-4xl font-bold leading-tight ">{card.title}</h3>
-            <p className="text-white text-base leading-relaxed font-medium">{card.category}</p>
+            <h3 className="text-white text-2xl md:text-[36px]  font-bold leading-tight ">{card.title}</h3>
+            <p className="text-white text-xl leading-relaxed font-medium">{card.category}</p>
           </div>
 
           <div className="space-y-4 md:mt-16 mt-4">
             {card.features?.map((feature, i) => (
               <div key={i} className="flex font-medium gap-2 text-white">
                 <IconChevronRight className="h-6 w-6 pt-1 flex-shrink-0 font-medium" />
-                <span className="md:text-lg text-base">{feature}</span>
+                <span className="text-xl">{feature}</span>
               </div>
             ))}
           </div>
