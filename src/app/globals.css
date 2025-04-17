@@ -159,3 +159,15 @@
     @apply w-[50px] h-2.5 bg-white opacity-100 rounded-full;
   }
 }
+
+
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-lg2: 1200px;
+  --breakpoint-xl: 1580px;
+  --breakpoint-2xl: 2000px;
+}

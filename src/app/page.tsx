@@ -23,7 +23,8 @@ export default function Home() {
         <Count />
       </section>
      <section>
-        <WhyChooseSection />
+        <WhyChooseSection /> 
+        {/* ================= */}
       </section>
       <section>
         <MapSection />

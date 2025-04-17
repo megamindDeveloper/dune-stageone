@@ -175,7 +175,7 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
   const isFlipped = isMobile ? activeCardIndex === index : false;
 
   return (
-    <div className={`perspective md:h-[680px] md:w-[372px] h-[500px] w-[250px] ${isMobile ? "cursor-pointer" : "group"}`} onClick={handleFlip}>
+    <div className={`perspective md:h-[680px] md:w-[372px] h-[600px] w-[290px] ${isMobile ? "cursor-pointer" : "group"}`} onClick={handleFlip}>
       <div
         className={`relative h-full w-full transition-all duration-500 [transform-style:preserve-3d] ${
           isMobile ? (isFlipped ? "[transform:rotateY(180deg)]" : "") : "group-hover:[transform:rotateY(180deg)]"
