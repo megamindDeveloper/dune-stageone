@@ -7,7 +7,7 @@ export function WhyChooseSection() {
       {/* Left Column - Text Content */}
       <div className="space-y-6 lg:space-y-8">
         <div>
-          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-gray-900">
+          <h2 className="text-2xl md:text-[44px] font-bold text-gray-900">
             Why Choose
             <span className="block text-[#CEB3FE]">to Study Abroad</span>
           </h2>
@@ -60,7 +60,7 @@ export function WhyChooseSection() {
       </div>
 
       {/* Right Column - Image Grid */}
-      <div className="relative grid grid-cols-2 gap-2 sm:gap-4 lg:grid-cols-2">
+      <div className="relative hidden md:grid grid-cols-2 gap-2 sm:gap-4 lg:grid-cols-2">
         <Image
           src="/whyChooseSectionImages/image1.png"
           width={150}
@@ -91,7 +91,7 @@ export function WhyChooseSection() {
           width={150}
           height={300}
           quality={100}
-          className="rounded-lg w-full h-auto object-cover mt-0 lg:mt-[-18rem]"
+          className="rounded-lg w-full h-auto object-cover mt-0 lg2:mt-[-4rem] xl:mt-[-7rem] "
         />
       </div>
     </div>

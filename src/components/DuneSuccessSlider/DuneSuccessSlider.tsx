@@ -32,7 +32,7 @@ const DuneSuccessSlider: React.FC = () => {
   return (
     <div className="w-full mx-auto py-24 bg-white">
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold mb-2">
+        <h1 className="text-2xl md:text-[44px] font-bold mb-2">
           Dune’s Secret to <span className="text-purple-400">Success</span>
         </h1>
         <p className="text-gray-600">Real students, real experiences - see how Dune made studying abroad possible</p>
@@ -68,12 +68,12 @@ const DuneSuccessSlider: React.FC = () => {
           {slides.map((slide) => {
             const videoId = getVideoId(slide.videoUrl);
             return (
-              <SwiperSlide key={slide.id} className="!w-[60%]">
+              <SwiperSlide key={slide.id} className="!w-[65%]">
                 <div className="relative rounded-3xl overflow-hidden h-[55vh] lg:h-[70vh] ">
                   <div className="w-full h-full">
                     <iframe
                       src={`https://www.youtube.com/embed/${videoId}?controls=1`}
-                      className="w-full h-[90%] absolute top-0 left-0 rounded-4xl"
+                      className="w-full h-[85%] lg:h-[90%] absolute top-0 left-0 rounded-4xl"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen

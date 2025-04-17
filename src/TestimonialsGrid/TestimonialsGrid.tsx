@@ -41,7 +41,7 @@ const TestimonialGrid: React.FC<TestimonialGridProps> = ({
   // Detect mobile screen size
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 640); // Tailwind's `sm` breakpoint
+      setIsMobile(window.innerWidth < 1024); // Tailwind's `sm` breakpoint
     };
     handleResize(); // Initial check
     window.addEventListener('resize', handleResize);
@@ -111,7 +111,7 @@ const TestimonialGrid: React.FC<TestimonialGridProps> = ({
         ref={containerRef}
         className="bg-[#FEFEFE] mx-auto px-4 sm:px-6 lg:px-8 py-12 transition-opacity duration-1000"
       >
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-24 lg:mb-48">
+        <h2 className="text-2xl md:text-[44px] font-bold text-center mb-24 lg:mb-48">
           {title.firstPart}{' '}
           <span className="text-purple-400">{title.highlightedPart}</span>
         </h2>

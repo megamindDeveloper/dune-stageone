@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Map, { Marker } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
+import { ClipLoader } from "react-spinners";
 
 function FormComponent() {
   const [formData, setFormData] = useState({
@@ -14,6 +15,7 @@ function FormComponent() {
   });
 
   const [charCount, setCharCount] = useState(0);
+  const [isLoding,setIsLoading]=useState(false)
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -35,7 +37,7 @@ function FormComponent() {
   return (
     <div className="min-h-screen bg-[#FEFEFE] flex items-center justify-center p-4">
       <div className="w-full max-w-6xl bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
-        <div className="w-full md:w-1/2 h-[400px] md:h-[800px] relative">
+        <div className=" md:w-1/2 h-[400px] md:h-[800px] relative">
           <Map
             mapboxAccessToken="pk.eyJ1IjoiamFtc2hhZDEiLCJhIjoiY2xrOXNsdTR0MDBoZDNkbXcxNXc1YnYybCJ9.7mKn2TGyJPQ5p1cIIss9ow"
             initialViewState={{
@@ -43,17 +45,26 @@ function FormComponent() {
               latitude: 12.8778,
               zoom: 17,
             }}
-            style={{ width: "100%", height: "95%", margin: "15px", borderRadius: "15px" }}
+            style={{ width: "none", height: "95%", margin: "15px", borderRadius: "15px" }}
             mapStyle="mapbox://styles/mapbox/streets-v11"
+            scrollZoom={false}
+            doubleClickZoom={false}
+            touchZoomRotate={false}
+            keyboard={false}
+            dragPan={false}
+            dragRotate={false}
           >
-            <Marker longitude={74.84957085771414} latitude={12.877806124395859} color="#7c3aed" />
+            <Marker
+              longitude={74.84957085771414}
+              latitude={12.877806124395859}
+              color="#7c3aed"
+              onClick={() => window.open("https://maps.app.goo.gl/QdXWXngg1nVq8Vcy7?g_st=aw", "_blank")}
+            />
           </Map>
         </div>
 
         <div className="w-full md:w-1/2 p-6 md:p-8 flex flex-col justify-center md:ml-8">
-          <h2 className="text-2xl md:text-4xl font-bold text-[#1e1b4b] mb-6 md:mb-8">
-            Ready to See your Study Dreams take Flight?
-          </h2>
+          <h2 className="text-2xl md:text-[44px] font-bold text-[#1e1b4b] mb-6 md:mb-8">Ready to See your Study Dreams take Flight?</h2>
 
           <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
             <div>
@@ -105,7 +116,7 @@ function FormComponent() {
             </div>
 
             <div className="relative">
-              <input
+              <textarea
                 name="enquiry"
                 placeholder="Your Enquiry"
                 value={formData.enquiry}
@@ -122,7 +133,7 @@ function FormComponent() {
                 type="submit"
                 className="w-32 bg-[#9583FE] text-white py-2 md:py-3 px-6 rounded-full hover:bg-[#6d28d9] transition-colors text-sm md:text-base"
               >
-                Submit
+               {isLoding ? <ClipLoader size={24} color="#fff" /> : "Submit"}
               </button>
             </div>
           </form>

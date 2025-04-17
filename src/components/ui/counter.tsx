@@ -60,9 +60,9 @@ export function Counter({ end, duration = 1000, suffix = "+", label }: CounterPr
 
   return (
     <div ref={counterRef} className="text-center p-4">
-      <div className="lg:text-6xl md:text-4xl text-2xl font-bold mb-2">
+      <div className=" md:text-[64px] text-5xl font-bold mb-2">
         {count}
-        <span className="lg:text-6xl md:text-4xl text-2xl">{suffix}</span>
+        <span className="md:text-[64px] text-5xl">{suffix}</span>
       </div>
       <div className="text-xl font-extrabold text-[#86868B]">{label}</div>
     </div>
