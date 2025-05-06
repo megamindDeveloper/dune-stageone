@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 interface TestimonialCardProps {
@@ -12,10 +13,12 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, text, avatarUrl
       <div className="flex flex-col flex-grow">
         <div className="mb-4">
           <div className="w-14 h-14 bg-gray-300 rounded-full overflow-hidden">
-            <img
+            <Image
               src={avatarUrl}
               alt={`${name}'s avatar`}
               className="w-full h-full object-cover"
+              width={1000}
+              height={1000}
             />
           </div>
         </div>

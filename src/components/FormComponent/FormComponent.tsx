@@ -131,7 +131,8 @@ function FormComponent() {
             <div className="flex justify-center">
               <button
                 type="submit"
-                className="w-32 bg-[#9583FE] text-white py-2 md:py-3 px-6 rounded-full hover:bg-[#6d28d9] transition-colors text-sm md:text-base"
+                aria-label={isLoding ? "Submitting" : "Submit form"}
+                className="w-32 cursor-pointer bg-[#9583FE] text-white py-2 md:py-3 px-6 rounded-full hover:bg-[#6d28d9] transition-colors text-sm md:text-base"
               >
                {isLoding ? <ClipLoader size={24} color="#fff" /> : "Submit"}
               </button>
