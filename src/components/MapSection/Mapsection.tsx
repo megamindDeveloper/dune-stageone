@@ -15,7 +15,7 @@ const countries: Country[] = [
   {
     id: 1,
     name: "United States of America",
-    description: "Harvard University, Stanford University",
+    description: "Massachusetts Institute of Technology (MIT), Harvard University, Stanford University, University of California, Berkeley (UCB), California Institute of Technology (Caltech)",
     color: "bg-[#B388FF]",
     position: "md:left-[24%] md:top-[39%] left-[17%] top-[46%]",
     image: "/worldMap/americaMap.svg",
@@ -23,7 +23,7 @@ const countries: Country[] = [
   {
     id: 2,
     name: "Canada",
-    description: "University of Toronto, University of Waterloo",
+    description: "University of Toronto, McGill University, University of British Columbia (UBC), University of Alberta, York University",
     color: "bg-[#B388FF]/60",
     position: "md:left-[21%] md:top-[26%] left-[14%] top-[42%]",
     image: "/worldMap/canadaMap.svg",
@@ -31,7 +31,7 @@ const countries: Country[] = [
   {
     id: 3,
     name: "United Kingdom",
-    description: "University of Oxford, University of Cambridge",
+    description: "University of Edinburgh, University of Manchester, University of Glasgow, King's College London, University of Birmingham",
     color: "bg-[#B388FF]",
     position: "left-[46.5%] top-[30%]",
     image: "/worldMap/ukMap.svg",
@@ -39,7 +39,7 @@ const countries: Country[] = [
   {
     id: 4,
     name: "Australia",
-    description: "Offers affordable education with high academic standards & welcoming immigration policies.",
+    description: "University of Sydney, Monash University, University of Melbourne, University of Queensland (UQ), University of New South Wales (UNSW Sydney)",
     color: "bg-[#B388FF]/60",
     position: "left-[78.4%] top-[78%]",
     image: "/worldMap/australiaMap.svg",
@@ -47,7 +47,7 @@ const countries: Country[] = [
   {
     id: 5,
     name: "New Zealand",
-    description: "University of Otago, The University of Auckland",
+    description: "University of Auckland, University of Otago, University of Canterbury, Massey University, Victoria University of Wellington",
     color: "bg-[#B388FF]",
     position: "left-[86%] top-[89%]",
     image: "/worldMap/newzLandMap.svg",
@@ -55,7 +55,7 @@ const countries: Country[] = [
   {
     id: 6,
     name: "Germany",
-    description: "University of Hamburg, Technical University Berlin",
+    description: "Technical University of Munich (TUM), Frankfurt School of Finance & Management, RWTH Aachen University, University of Mannheim, University of Göttingen",
     color: "bg-[#B388FF]/60",
     position: "left-[49.25%] top-[32%]",
     image: "/worldMap/germanyMap.svg",
@@ -63,7 +63,7 @@ const countries: Country[] = [
   {
     id: 7,
     name: "France",
-    description: "University of Oxford, University of Cambridge",
+    description: "Sorbonne University, Université Paris-Saclay, Université de Lyon, Université de Strasbourg, Université de Bordeaux",
     color: "bg-[#B388FF]/60",
     position: "left-[47.7%] top-[35%]",
     image: "/worldMap/franceMap.svg",
@@ -79,7 +79,7 @@ const countries: Country[] = [
   {
     id: 9,
     name: "Malaysia",
-    description: "Universiti Malaya, Sunway University",
+    description: "University of Malaya (UM), Universiti Kebangsaan Malaysia (UKM), Universiti Sains Malaysia (USM), Universiti Putra Malaysia (UPM), Universiti Teknologi Malaysia (UTM)",
     color: "bg-[#B388FF]/60",
     position: "left-[72.5%] top-[64%]",
     image: "/worldMap/malaysiaMap.svg",
@@ -87,7 +87,7 @@ const countries: Country[] = [
   {
     id: 10,
     name: "Ireland",
-    description: "Trinity College Dublin, University College Dublin",
+    description: "Trinity College Dublin, University College Dublin (UCD), University College Cork (UCC), National University of Ireland Galway (NUIG), Dublin City University (DCU)",
     color: "bg-[#B388FF]/60",
     position: "left-[44.3%] top-[30.5%]",
     image: "/worldMap/irelandMap.svg",
