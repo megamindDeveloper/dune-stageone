@@ -125,13 +125,15 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
             className="relative z-40 h-10 w-10 rounded-full bg-[#D2D2D7A3] flex items-center justify-center disabled:opacity-50"
             onClick={scrollLeft}
             disabled={!canScrollLeft}
+            aria-label="Scroll left"
           >
             <IconChevronLeft className="h-8 w-6 text-[#0000008F]" />
           </button>
           <button
-            className="relative z-40 h-10 w-10 rounded-full bg-[#D2D2D7A3]  flex items-center justify-center disabled:opacity-50"
+            className="relative z-40 h-10 w-10 rounded-full bg-[#D2D2D7A3] flex items-center justify-center disabled:opacity-50"
             onClick={scrollRight}
             disabled={!canScrollRight}
+            aria-label="Scroll right"
           >
             <IconChevronRight className="h-6 w-6 text-[#0000008F]" />
           </button>

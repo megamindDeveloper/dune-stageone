@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between  p-4 bg-[#faf2fe] md:px-24">
       {/* Left Section: Icon and Title */}
-      <Link href="/">
+      <Link href="/" aria-label="Go to homepage">
         <div className="flex cursor-pointer items-center  md:mx-0 space-x-2 lg:space-x-3 ">
           {/* Icon Placeholder */}
           <NavIcon1/>

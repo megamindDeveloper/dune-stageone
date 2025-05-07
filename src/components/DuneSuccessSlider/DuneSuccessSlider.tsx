@@ -75,8 +75,10 @@ const DuneSuccessSlider: React.FC = () => {
                       src={`https://www.youtube.com/embed/${videoId}?controls=1`}
                       className="w-full h-[85%] lg:h-[90%] absolute top-0 left-0 rounded-4xl"
                       frameBorder="0"
+                      title={`Dune Success Story Video ${slide.id}`}
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
+                      
                     />
                   </div>
 
@@ -87,7 +89,7 @@ const DuneSuccessSlider: React.FC = () => {
                       <div className="bg-white/20 rounded-full p-2">
                         <Pause className="text-white w-5 h-5" />
                       </div>
-                      <button className="bg-white text-sm lg:px-4 lg:py-2 px-2 py-2 rounded-full font-medium shadow-md">Watch the Full Video</button>
+                      <button aria-label="Watch the Full Video"  className="bg-white text-sm lg:px-4 lg:py-2 px-2 py-2 rounded-full font-medium shadow-md">Watch the Full Video</button>
                     </div>
                   </div>
                 </div>
@@ -98,10 +100,10 @@ const DuneSuccessSlider: React.FC = () => {
 
           {/* Navigation Buttons - Bottom Left */}
           <div className="absolute top-[88%] lg:bottom-[-14]  left-0 lg:left-[19%] flex gap-2 z-10 p-4">
-            <button ref={prevRef} className="cursor-pointer bg-[#D2D2D7] text-gray-800 p-2 rounded-full shadow-md transition duration-300">
+            <button ref={prevRef} aria-label="Previous slide"  className="cursor-pointer bg-[#D2D2D7] text-gray-800 p-2 rounded-full shadow-md transition duration-300">
               <ChevronLeft className="w-5 h-5" />
             </button>
-            <button ref={nextRef} className="cursor-pointer bg-[#D2D2D7] text-gray-800 p-2  rounded-full shadow-md transition duration-300">
+            <button ref={nextRef}   aria-label="Next slide" className="cursor-pointer bg-[#D2D2D7] text-gray-800 p-2  rounded-full shadow-md transition duration-300">
               <ChevronRight className="w-5 h-5" />
             </button>
           </div>
