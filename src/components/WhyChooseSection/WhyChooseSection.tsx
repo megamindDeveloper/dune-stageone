@@ -14,8 +14,8 @@ export function WhyChooseSection() {
         </div>
 
         <p className="text-[#86868B] text-base sm:text-lg lg:text-xl leading-relaxed">
-          Studying abroad isn't just about earning a degree—it's about unlocking global opportunities, gaining a world-class education, & experiencing
-          life from a new perspective. Whether it's accessing top-ranked universities, building a global network, or enhancing career prospects, the
+          Studying abroad isn&apos;t just about earning a degree—it&apos;s about unlocking global opportunities, gaining a world-class education, & experiencing
+          life from a new perspective. Whether it&apos;s accessing top-ranked universities, building a global network, or enhancing career prospects, the
           right study destination can shape your future.
         </p>
 

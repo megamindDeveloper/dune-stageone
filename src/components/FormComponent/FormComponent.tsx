@@ -14,12 +14,14 @@ function FormComponent() {
     enquiry: "",
   });
 
-  const [charCount, setCharCount] = useState(0);
-  const [isLoding,setIsLoading]=useState(false)
+  const [charCount, setCharCount] = useState<number>(0);
+  const [isLoding,setIsLoading]=useState<boolean>(false)
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    setIsLoading(true)
     console.log(formData);
+    setIsLoading(false)
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
