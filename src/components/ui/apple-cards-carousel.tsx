@@ -144,8 +144,8 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
 };
 
 // Updated Card component to match the design in the screenshot
-export const Card = ({ card, index, layout = false }: { card: Card; index: number; layout?: boolean }) => {
-  const { currentIndex, activeCardIndex, setActiveCardIndex } = useContext(CarouselContext);
+export const Card = ({ card, index }: { card: Card; index: number; layout?: boolean }) => {
+  const {  activeCardIndex, setActiveCardIndex } = useContext(CarouselContext);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {

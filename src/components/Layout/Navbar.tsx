@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { NavIcon2,NavIcon1 } from "../../../public/icons/icon";

@@ -7,7 +7,7 @@ export default function ServiceSteps() {
   return (
     <div className="w-full  py-20 bg-[#FDFAFE]">
       <h2 className="max-w-7xl text-center mx-auto text-2xl md:text-[44px] font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-        We've Got You Covered,<span className="text-[#CEB3FE]">From Application to Arrival</span>
+        We&apos;ve Got You Covered,<span className="text-[#CEB3FE]">From Application to Arrival</span>
       </h2>
       <Carousel items={cards} />
     </div>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import image from "../../../public/herobanner/homebanner.avif";
+import image from "../../../public/herobanner/homebanner.webp";
 import Link from "next/link";
 import Head from "next/head";
 
@@ -37,7 +37,7 @@ function HeroBanner() {
               aria-label="Start the process"
               className="lg:px-6 lg:mt-7 mt-5 bg-black rounded-[60px] py-2 px-4 text-xl lg:text-[26px] lg:py-3 text-white"
             >
-              Let's Get Started
+              Let&apos;s Get Started
             </button>
             <div className="mt-5 md:hidden">
               <p className="text-[16px] w-[70%] text-[#29357299] md:text-[18px]">
