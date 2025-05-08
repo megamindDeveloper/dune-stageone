@@ -186,7 +186,7 @@ export const Card = ({ card, index }: { card: Card; index: number; layout?: bool
         {/* Front of card */}
         <div className="absolute inset-0 rounded-3xl bg-[#B298FE] overflow-hidden justify-between flex flex-col items-start [backface-visibility:hidden]">
           <div className="space-y-4 p-4 md:p-8">
-            <h3 className="text-white text-2xl md:text-[36px] font-bold leading-tight">{card.title}</h3>
+            <h3 className="text-white text-2xl md:text-[36px] font-bold leading-tight font-helvetica">{card.title}</h3>
           </div>
 
           <div className="w-full flex items-center justify-center">
@@ -202,7 +202,7 @@ export const Card = ({ card, index }: { card: Card; index: number; layout?: bool
         <div className="absolute inset-0 rounded-3xl bg-[#B298FE] md:p-8 p-4 py-auto [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col">
           <div className="space-y-4">
             <h3 className="text-white text-2xl md:text-[36px]  font-bold leading-tight ">{card.title}</h3>
-            <p className="text-white text-xl leading-relaxed font-medium">{card.category}</p>
+            <p className="text-white text-xl leading-relaxed font-helvetica font-medium">{card.category}</p>
           </div>
 
           <div className="space-y-4 md:mt-16 mt-4">

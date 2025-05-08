@@ -2,20 +2,10 @@ import Image from "next/image";
 import React from "react";
 import image from "../../../public/herobanner/homebanner.webp";
 import Link from "next/link";
-import Head from "next/head";
 
 function HeroBanner() {
   return (
     <>
-      <Head>
-        <link
-          rel="preload"
-          href="/herobanner/homebanner.webp"
-          as="image"
-          fetchPriority="high"
-        />
-        <link rel="dns-prefetch" href="https://your-image-host.com" />
-      </Head>
       <div className="bg-[#F8F1FF]">
         <div className="w-full flex justify-center items-center relative">
           <Image
@@ -30,8 +20,8 @@ function HeroBanner() {
             quality={75} // Adjust compression (default is 75, lower for more savings)
           />
           <div className="absolute top-[15%] left-[10%]">
-            <h1 className="w-[70%] md:w-[60%] text-[40px] font-extrabold lg:text-[100px] leading-[1] lg:leading-24 text-[#AF9FFF]">
-              Your Future Knows No Borders
+            <h1 className="w-[70%] md:w-[60%] font-helvetica text-[40px] font-extrabold lg:text-[100px] leading-[1] lg:leading-24 text-[#AF9FFF]">
+              Your Future Knows No Borders Ros
             </h1>
             <button
               aria-label="Start the process"
@@ -44,9 +34,7 @@ function HeroBanner() {
                 For Free <br /> Counselling Contact
               </p>
               <Link href="tel:+918792358999">
-                <p className="text-[20px] font-bold text-[#293572] md:text-[18px]">
-                  +91 879 235 8999
-                </p>
+                <p className="text-[20px] font-bold text-[#293572] md:text-[18px]">+91 879 235 8999</p>
               </Link>
             </div>
           </div>

@@ -1,16 +1,34 @@
 // app/layout.tsx
-import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import LenisProvider from '@/components/LenisProvider'
+import localFont from 'next/font/local'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-})
+const helveticaNowDisplay = localFont({
+  src: [
+    {
+      path: '../../public/fonts/HelveticaNowDisplay-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/HelveticaNowDisplay-Medium.ttf',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/HelveticaNowDisplay-Bold.ttf',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/HelveticaNowDisplay-ExtraBold.ttf',
+      weight: '800',
+      style: 'normal',
+    },
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
+  ],
+  variable: '--font-helvetica-now',
+  display: 'swap',
 })
 
 export const metadata = {
@@ -65,7 +83,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      className={`${helveticaNowDisplay.variable} antialiased`}
       >
         <LenisProvider />
         {children}

@@ -8,8 +8,8 @@ export default function UniversityPartners() {
       <h2 className="text-center text-2xl md:text-[44px] font-semibold mt-12">
         Our Partnering <span className="text-purple-400">Universities</span>
       </h2>
-      <InfiniteMovingCards items={images} direction="right" speed="slow" />
       <InfiniteMovingCards items={images} direction="left" speed="slow" />
+      <InfiniteMovingCards items={images} direction="right" speed="slow" />
     </div>
   );
 }
