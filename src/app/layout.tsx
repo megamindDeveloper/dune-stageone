@@ -1,4 +1,3 @@
-
 import './globals.css'
 import LenisProvider from '@/components/LenisProvider'
 import localFont from 'next/font/local'
