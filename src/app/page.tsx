@@ -38,7 +38,7 @@ export default function Home() {
       <section>
         <TestimonialGrid testimonials={testimonials} />
       </section>
-      <section>
+      <section id="form-section">
         <FormComponent />
       </section>
     </Layout>

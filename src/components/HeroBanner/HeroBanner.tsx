@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import image from "../../../public/herobanner/homebanner.webp";
 import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 
 function HeroBanner() {
   return (
@@ -23,12 +26,16 @@ function HeroBanner() {
             <h1 className="w-[70%] md:w-[60%] font-helvetica text-[40px] font-extrabold lg:text-[100px] leading-[1] lg:leading-24 text-[#AF9FFF]">
               Your Future Knows No Borders Ros
             </h1>
-            <button
+            <ScrollLink
+              to="form-section"
+              smooth={true}
+              duration={3000}
+              offset={-10} // adjust if you have fixed headers
               aria-label="Start the process"
-              className="lg:px-6 lg:mt-7 mt-5 bg-black rounded-[60px] py-2 px-4 text-xl lg:text-[26px] lg:py-3 text-white"
+              className="cursor-pointer lg:px-6 lg:mt-7 mt-5 bg-black rounded-[60px] py-2 px-4 text-xl lg:text-[26px] lg:py-3 text-white inline-block"
             >
               Let&apos;s Get Started
-            </button>
+            </ScrollLink>
             <div className="mt-5 md:hidden">
               <p className="text-[16px] w-[70%] text-[#29357299] md:text-[18px]">
                 For Free <br /> Counselling Contact
