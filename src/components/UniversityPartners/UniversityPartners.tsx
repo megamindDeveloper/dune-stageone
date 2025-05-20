@@ -14,35 +14,7 @@ export default function UniversityPartners() {
   );
 }
 
-const images = [
-  {
-    imgsrc: "/partnersLogo/logo1.svg",
-  },
-  {
-    imgsrc: "/partnersLogo/logo2.svg",
-  },
-  {
-    imgsrc: "/partnersLogo/logo3.svg",
-  },
-  {
-    imgsrc: "/partnersLogo/logo4.svg",
-  },
-  {
-    imgsrc: "/partnersLogo/logo5.svg",
-  },
-  {
-    imgsrc: "/partnersLogo/logo6.svg",
-  },
-  {
-    imgsrc: "/partnersLogo/logo7.svg",
-  },
-  {
-    imgsrc: "/partnersLogo/logo8.svg",
-  },
-  {
-    imgsrc: "/partnersLogo/logo9.svg",
-  },
-  {
-    imgsrc: "/partnersLogo/logo10.svg",
-  },
-];
+const images = Array.from({ length: 50 }, (_, i) => ({
+  imgsrc: `/partnersLogo/${i + 1}.png`,
+}));
+
