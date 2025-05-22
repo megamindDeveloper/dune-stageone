@@ -87,8 +87,8 @@ export const InfiniteMovingCards = ({
               src={item.imgsrc} 
               alt="imgsrc" 
               className="mx-auto my-auto" 
-              width={200} 
-              height={200}
+              width={150} 
+              height={150}
             />
           </li>
         ))}

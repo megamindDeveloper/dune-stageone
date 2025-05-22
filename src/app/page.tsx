@@ -1,10 +1,13 @@
+import CertifiedExelence from "@/components/CertifiedExelence/CertifiedExelence";
 import Count from "@/components/counter/counts";
 import DuneSuccessSlider from "@/components/DuneSuccessSlider/DuneSuccessSlider";
+import ExpertCounselling from "@/components/ExpertCounselling/ExpertCounselling";
 import FormComponent from "@/components/FormComponent/FormComponent";
 import HeroBanner from "@/components/HeroBanner/HeroBanner";
 import Layout from "@/components/Layout/Layout";
 import { MapSection } from "@/components/MapSection/Mapsection";
 import ServiceSteps from "@/components/ServiceSteps/ServiceSteps";
+import UsaCard from "@/components/TopCountries/TopCountries";
 import UniversityPartners from "@/components/UniversityPartners/UniversityPartners";
 import { WhyChooseSection } from "@/components/WhyChooseSection/WhyChooseSection";
 import { testimonials } from "@/data/testimonials";
@@ -16,24 +19,32 @@ export default function Home() {
       <section>
         <HeroBanner />
       </section>
-      <section>
+      {/* <section>
         <ServiceSteps />
+      </section> */}
+      <section>
+        <ExpertCounselling />
       </section>
-       <section>
+      <section>
         <Count />
       </section>
-     <section>
-        <WhyChooseSection /> 
-        {/* ================= */}
-      </section>
       <section>
+        <WhyChooseSection />
+      </section>
+      {/* <section>
         <MapSection />
+      </section> */}
+      <section>
+        <UsaCard />
       </section>
       <section>
         <UniversityPartners />
       </section>
       <section>
         <DuneSuccessSlider />
+      </section>
+      <section>
+        <CertifiedExelence />
       </section>
       <section>
         <TestimonialGrid testimonials={testimonials} />

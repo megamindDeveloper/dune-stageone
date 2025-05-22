@@ -171,3 +171,13 @@
   --breakpoint-xl: 1580px;
   --breakpoint-2xl: 2000px;
 }
+/* 
+.wa-widget-send-button{
+  top: 0 ;
+} */
+
+.wati_chat_widget {
+  bottom: auto !important;
+  top: 20px !important;
+  right: 20px !important;
+}
