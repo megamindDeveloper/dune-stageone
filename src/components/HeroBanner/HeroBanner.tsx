@@ -5,7 +5,6 @@ import React from "react";
 import image from "../../../public/herobanner/homebanner.webp";
 import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
-
 function HeroBanner() {
   return (
     <>
@@ -24,7 +23,7 @@ function HeroBanner() {
           />
           <div className="absolute top-[15%] left-[10%]">
             <h1 className="w-[70%] md:w-[60%] lg:w-[50%] font-helvetica text-[40px] font-extrabold lg:text-[100px] leading-[1] lg:leading-24 text-[#AF9FFF]">
-              Your Future Knows No Borders 
+              Your Future Knows No Borders
             </h1>
             <ScrollLink
               to="form-section"

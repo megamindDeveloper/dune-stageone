@@ -36,7 +36,6 @@ const DuneSuccessSlider: React.FC = () => {
       id: 3,
       videoUrl: "https://dl.dropboxusercontent.com/scl/fi/580jhrv2kk883chfgtnvb/Carol.mp4?rlkey=oiv872f44jytqwuf195mq5mcc&st=q0oqfwn5&dl=0",
       youtubeUrl: "https://youtu.be/rv0KerNW4QE?si=ObYcwEiaqF0UD90P",
-      // thumbnail: "https://res.cloudinary.com/dvandhsai/image/upload/v1745989151/gerbybf4ejfgs7aeajyq.jpg",
     },
     {
       id: 4,
@@ -51,6 +50,7 @@ const DuneSuccessSlider: React.FC = () => {
     const match = url.match(regExp);
     return match && match[2].length === 11 ? match[2] : null;
   };
+
   const videoRefs = useRef<HTMLVideoElement[]>([]);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [progress, setProgress] = useState<number>(0);
@@ -79,7 +79,7 @@ const DuneSuccessSlider: React.FC = () => {
   };
 
   return (
-    <div className="w-full mx-auto py-24 bg-white">
+    <div className="w-full mx-auto py-12 md:py-24 bg-white">
       <div className="text-center mb-8 lg:mb-32">
         <h1 className="text-2xl md:text-[44px] font-bold mb-2">
           Dune’s Secret to <span className="text-purple-400">Success</span>
@@ -90,8 +90,8 @@ const DuneSuccessSlider: React.FC = () => {
       <div className="relative">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
-          spaceBetween={50}
-          slidesPerView={"auto"}
+          spaceBetween={20}
+          slidesPerView={1}
           centeredSlides={true}
           loop={true}
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
@@ -113,29 +113,31 @@ const DuneSuccessSlider: React.FC = () => {
             el: ".custom-swiper-pagination-inner",
           }}
           className="pb-12"
+          breakpoints={{
+            768: {
+              slidesPerView: "auto",
+              spaceBetween: 50,
+            },
+          }}
         >
-          {/* Swiper slides here */}
           {slides.map((slide) => {
             const videoId = getVideoId(slide.videoUrl);
             return (
-              <SwiperSlide key={slide.id} className="!w-[65%]">
-                <div className="relative rounded-3xl overflow-hidden h-[55vh] lg:h-[70vh] ">
-  
-                  <div className="relative ">
+              <SwiperSlide key={slide.id} className="w-full md:!w-[65%]">
+                <div className="relative rounded-3xl overflow-hidden  md:h-[60vh] lg:h-[70vh]">
+                  <div className="relative">
                     <video
-                   ref={(el) => {
-                    videoRefs.current[slide.id] = el!;
-                  }}
-                  
-                      className="rounded-3xl"
+                      ref={(el) => {
+                        videoRefs.current[slide.id] = el!;
+                      }}
+                      className="rounded-3xl w-full h-full object-cover"
                       loop
                       playsInline
                       onTimeUpdate={() => handleTimeUpdate(slide.id)}
-                      width="100%"
                     >
                       <source src={slide.videoUrl} type="video/mp4" />
                     </video>
-                    <div className="absolute lg:bottom-14 xl:bottom-0 w-full  p-4 z-10 flex flex-row justify-end md:justify-between ">
+                    <div className="absolute bottom-4 md:bottom-8 lg:bottom-14 w-full p-4 z-10 flex flex-row justify-end md:justify-between">
                       <div className="hidden md:block">
                         <svg width="180" height="41" viewBox="0 0 180 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <g opacity="0.4">
@@ -176,16 +178,14 @@ const DuneSuccessSlider: React.FC = () => {
                       <div className="flex gap-4">
                         <div>
                           <Link href={slide.youtubeUrl} target="_blank">
-                            <button className="text-white bg-transparent rounded-full border-white border py-2.5 px-4 hidden md:block cursor-pointer">
+                            <button className="text-white bg-transparent rounded-full border-white border py-2 px-3 text-sm md:text-base md:py-2.5 md:px-4 hidden md:block cursor-pointer">
                               Watch the Full Video
                             </button>
                           </Link>
                         </div>
                         <div className="cursor-pointer" onClick={togglePlayPause}>
-                          <svg width="50" height="50" viewBox="0 0 50 50">
-                            {/* Background Circle */}
+                          <svg width="40" height="40" viewBox="0 0 50 50" className="md:w-[50px] md:h-[50px]">
                             <circle cx="25" cy="25" r="22" stroke="#ffff" strokeWidth="2" fill="none" opacity="0.3" />
-                            {/* Progress Circle */}
                             <circle
                               cx="25"
                               cy="25"
@@ -199,14 +199,13 @@ const DuneSuccessSlider: React.FC = () => {
                               className="transition-all duration-100"
                               transform="rotate(-90 25 25)"
                             />
-                            {/* Play/Pause Icon */}
                             <foreignObject x="9" y="8" width="32" height="32">
                               <button
                                 className="w-full h-full cursor-pointer flex items-center justify-center"
                                 aria-label={isPlaying ? "Pause" : "Play"}
                               >
                                 {isPlaying ? (
-                                  <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <svg width="32" height="32" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg" className="md:w-[37px] md:h-[37px]">
                                     <rect x="0.5" y="0.851562" width="36" height="36" rx="18" fill="#E8E8ED" />
                                     <path
                                       d="M15.25 11.8516H13.75C12.9216 11.8516 12.25 12.5231 12.25 13.3516V24.3516C12.25 25.18 12.9216 25.8516 13.75 25.8516H15.25C16.0784 25.8516 16.75 25.18 16.75 24.3516V13.3516C16.75 12.5231 16.0784 11.8516 15.25 11.8516Z"
@@ -220,7 +219,7 @@ const DuneSuccessSlider: React.FC = () => {
                                     />
                                   </svg>
                                 ) : (
-                                  <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <svg width="32" height="32" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg" className="md:w-[37px] md:h-[37px]">
                                     <rect x="0.140625" y="0.261719" width="36" height="36" rx="18" fill="#E8E8ED" />
                                     <path
                                       d="M13.1441 23.5118V13.0318C13.1184 12.8282 13.1366 12.6214 13.1974 12.4254C13.2582 12.2293 13.3602 12.0485 13.4965 11.8951C13.6329 11.7417 13.8005 11.6192 13.9881 11.5359C14.1756 11.4525 14.3789 11.4102 14.5841 11.4118C14.9776 11.3951 15.3663 11.5036 15.6941 11.7218L24.2241 16.7218C24.9841 17.1618 25.3941 17.5218 25.3941 18.2318C25.3941 18.9418 24.9841 19.3018 24.2241 19.7418L15.6941 24.7418C15.3663 24.9601 14.9776 25.0686 14.5841 25.0518C14.3854 25.0554 14.1882 25.0171 14.0052 24.9396C13.8222 24.8621 13.6575 24.7471 13.5218 24.6019C13.3861 24.4568 13.2823 24.2847 13.2173 24.097C13.1522 23.9092 13.1273 23.7099 13.1441 23.5118Z"
@@ -242,33 +241,31 @@ const DuneSuccessSlider: React.FC = () => {
           })}
 
           {/* Navigation Buttons - Bottom Left */}
-          <div className="flex justify-between w-[65%] mx-auto mt-2 lg:mt-12">
-            <div className=" lg:bottom-[-14] px-auto  flex gap-2 z-10 p-4">
+          <div className="flex justify-between w-full md:w-[65%] mx-auto mt-2 lg:mt-12">
+            <div className="flex gap-2 z-10 p-4">
               <button
                 ref={prevRef}
                 aria-label="Previous slide"
                 className="cursor-pointer bg-[#D2D2D7] text-gray-800 p-2 rounded-full shadow-md transition duration-300"
               >
-                <ChevronLeft className="w-5 h-5" />
+                <ChevronLeft className="w-4 h-4 md:w-5 md:h-5" />
               </button>
               <button
                 ref={nextRef}
                 aria-label="Next slide"
-                className="cursor-pointer bg-[#D2D2D7] text-gray-800 p-2  rounded-full shadow-md transition duration-300"
+                className="cursor-pointer bg-[#D2D2D7] text-gray-800 p-2 rounded-full shadow-md transition duration-300"
               >
-                <ChevronRight className="w-5 h-5" />
+                <ChevronRight className="w-4 h-4 md:w-5 md:h-5" />
               </button>
             </div>
 
             {/* Custom Pagination - Bottom Right */}
-            <div className=" top-[90%]  z-10 p-4 right-[0%] lg:right-[19%] ">
+            <div className="p-4">
               <div className="custom-swiper-pagination-inner flex items-center gap-2 bg-purple-300/60 px-4 py-2 rounded-full" />
             </div>
           </div>
         </Swiper>
       </div>
-
-      {/* Swiper Pagination (built-in) */}
     </div>
   );
 };

@@ -14,9 +14,9 @@ export function WhyChooseSection() {
         </div>
 
         <p className="text-[#86868B] text-base sm:text-lg lg:text-xl leading-relaxed">
-          Studying abroad isn&apos;t just about earning a degree—it&apos;s about unlocking global opportunities, gaining a world-class education, & experiencing
-          life from a new perspective. Whether it&apos;s accessing top-ranked universities, building a global network, or enhancing career prospects, the
-          right study destination can shape your future.
+          Studying abroad isn&apos;t just about earning a degree—it&apos;s about unlocking global opportunities, gaining a world-class education, &
+          experiencing life from a new perspective. Whether it&apos;s accessing top-ranked universities, building a global network, or enhancing
+          career prospects, the right study destination can shape your future.
         </p>
 
         <p className="text-[#86868B] text-base sm:text-lg lg:text-xl leading-relaxed">
@@ -24,15 +24,15 @@ export function WhyChooseSection() {
           the best choice for your aspirations. Your dream of studying abroad starts here—with the right partner by your side.
         </p>
 
-        <div className="space-y-4 mt-8 lg:mt-32 w-full sm:w-[28rem] ml-0 sm:ml-5">
+        <div className="space-y-4 mt-8 lg:mt-20 w-full sm:w-[28rem] ml-0 sm:ml-5">
           <div className="flex items-start gap-3">
             <div className="p-2 bg-transparent rounded-lg">
               <Image
-                src="/whyChooseSectionImages/hand.svg"
+                src="/whyChooseSectionImages/global.svg"
                 width={40}
                 height={40}
                 alt="Graduate celebrating"
-                className="rounded-lg w-8 h-8 sm:w-10 sm:h-10 object-cover"
+                className="rounded-lg w-10 h-10 sm:w-14 sm:h-14 "
               />
             </div>
             <div>
@@ -44,11 +44,41 @@ export function WhyChooseSection() {
           <div className="flex items-start gap-3">
             <div className="p-2 bg-transparent rounded-lg">
               <Image
+                src="/whyChooseSectionImages/univercity.svg"
+                width={40}
+                height={40}
+                alt="Graduate celebrating"
+                className="rounded-lg w-10 h-10 sm:w-14 sm:h-14 "
+              />
+            </div>
+            <div>
+              <h3 className="text-[#86868B] text-lg sm:text-xl font-extrabold">Hassle-Free Process</h3>
+              <p className="text-[#86868B] text-base sm:text-xl">Expert handling of applications, scholarships, & visas.</p>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <div className="p-2 bg-transparent rounded-lg">
+              <Image
+                src="/whyChooseSectionImages/hand.svg"
+                width={40}
+                height={40}
+                alt="Graduate celebrating"
+                className="rounded-lg w-10 h-10 sm:w-14 sm:h-14 "
+              />
+            </div>
+            <div>
+              <h3 className="text-[#86868B] text-lg sm:text-xl font-extrabold">Personalized Support</h3>
+              <p className="text-[#86868B] text-base sm:text-xl">Tailored guidance from university selection to visa approval.</p>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <div className="p-2 bg-transparent rounded-lg">
+              <Image
                 src="/whyChooseSectionImages/hassle.svg"
                 width={40}
                 height={40}
                 alt="Graduate celebrating"
-                className="rounded-lg w-8 h-8 sm:w-10 sm:h-10 object-cover"
+                className="rounded-lg w-10 h-10 sm:w-14 sm:h-14 "
               />
             </div>
             <div>
@@ -75,7 +105,7 @@ export function WhyChooseSection() {
           width={150}
           height={150}
           quality={100}
-          className="rounded-lg w-full h-auto object-cover mt-0 lg:mt-26"
+          className="rounded-lg w-full h-auto  mt-0 lg:mt-26"
         />
         <Image
           src="/whyChooseSectionImages/image3.png"
@@ -91,9 +121,9 @@ export function WhyChooseSection() {
           width={150}
           height={300}
           quality={100}
-          className="rounded-lg w-full h-auto object-cover mt-0 lg2:mt-[-4rem] xl:mt-[-7rem] "
+          className="rounded-lg w-full h-auto  mt-0 lg2:mt-[-4rem] xl:mt-[-7rem] "
         />
       </div>
     </div>
   );
-} 
+}

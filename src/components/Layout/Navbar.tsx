@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { NavIcon2,NavIcon1 } from "../../../public/icons/icon";
+import WhatsappChatWidget from "../WhatsAppWidget/WhatsAppWidget";
 
 const Navbar = () => {
   return (
@@ -19,6 +20,7 @@ const Navbar = () => {
       <div className="text-right hidden md:block">
         <p className="text-[14px] text-[#29357299] md:text-[18px]">For Free Counselling Contact</p>
         <Link href="tel:+918792358999" ><p className="text-[14px] font-semibold text-[#293572] md:text-[18px]">+91 879 235 8999</p></Link>      </div>
+        <WhatsappChatWidget/>
     </nav>
   );
 };
