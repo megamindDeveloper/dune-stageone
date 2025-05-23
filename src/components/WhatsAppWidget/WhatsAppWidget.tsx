@@ -26,11 +26,10 @@ const WhatsappChatWidget = () => {
       brandSetting: {
         brandName: "Wati",
         brandSubTitle: "undefined",
-        brandImg:
-          "https://www.wati.io/wp-content/uploads/2023/04/Wati-logo.svg",
+        brandImg: "https://www.wati.io/wp-content/uploads/2023/04/Wati-logo.svg",
         welcomeText: "Hi there!\nHow can I help you?",
         messageText: "Hello, %0A I have a question about ",
-        backgroundColor: "#00e785",
+        backgroundColor: "#c98870",
         ctaText: "Chat with us",
         borderRadius: "25",
         autoShow: false,
@@ -53,12 +52,21 @@ const WhatsappChatWidget = () => {
           bottom: auto !important;
           top: 20px !important;
           right: 20px !important;
+          background-color: black !important;
         }
         .wa-chat-box {
           bottom: auto !important;
           top: 80px !important;
           right: 20px !important;
           margin-bottom: 0 !important;
+          justify-content: flex-start !important;
+          height: 30vh !important;
+        }
+        .wa-chat-box::before {
+          border-width: 0px 0px 0px 0px !important;
+        }
+        .wa-chat-box::after {
+          border-width: 0px 0px 0px 0px !important;
         }
       `}</style>
       <Script
