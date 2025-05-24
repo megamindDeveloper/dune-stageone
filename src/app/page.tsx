@@ -5,6 +5,7 @@ import ExpertCounselling from "@/components/ExpertCounselling/ExpertCounselling"
 import FormComponent from "@/components/FormComponent/FormComponent";
 import HeroBanner from "@/components/HeroBanner/HeroBanner";
 import Layout from "@/components/Layout/Layout";
+import LimitedPeriod from "@/components/LimitedPeriod/LimitedPeriod";
 import { MapSection } from "@/components/MapSection/Mapsection";
 import ServiceSteps from "@/components/ServiceSteps/ServiceSteps";
 import UsaCard from "@/components/TopCountries/TopCountries";
@@ -51,6 +52,9 @@ export default function Home() {
       </section>
       <section id="form-section">
         <FormComponent />
+      </section>
+      <section>
+        <LimitedPeriod/>
       </section>
     </Layout>
   );
