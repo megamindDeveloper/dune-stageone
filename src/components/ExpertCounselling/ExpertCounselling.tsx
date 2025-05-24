@@ -43,17 +43,17 @@ const sections: SectionData[] = [
   {
     title: "Admissions & Test Preparation",
     items: [
-      { text: "University, Country & Course Selection", icon: <Five /> },
-      { text: "Pathway Planning (foundation, pathway or transfer routes)", icon: <Six /> },
-      { text: "Career Counselling & Profile Evaluation", icon: <Seven /> },
+      { text: "Test Preparation (IELTS, TOEFL, GRE, GMAT, SAT) ", icon: <Five /> },
+      { text: "Internship Assistance (often strengthens applications) ", icon: <Six /> },
+      { text: "Academic Credit‑Transfer Program Assistance (articulation advice) ", icon: <Seven /> },
     ],
   },
   {
     title: "Funding & Payments",
     items: [
-      { text: "University, Country & Course Selection", icon: <Eight /> },
-      { text: "Pathway Planning (foundation, pathway or transfer routes)", icon: <Nine /> },
-      { text: "Career Counselling & Profile Evaluation", icon: <Ten /> },
+      { text: "Study Metro Scholarship & University Funding Opportunities", icon: <Eight /> },
+      { text: "Education Loan Assistances", icon: <Nine /> },
+      { text: "Fees Transfer Assistance (forex, wire guidance)", icon: <Ten /> },
     ],
   },
   {
@@ -87,7 +87,7 @@ interface SectionProps {
 
 // Reusable Section component with typed props
 const Section: React.FC<SectionProps> = ({ title, items }) => (
-  <div className="mx-auto">
+  <div className="mx-auto bg-[#fbf6fe] p-2 lg:p-10 rounded-lg w-full">
     <h1 className="text-xl font-medium mb-5">{title}</h1>
     <ul className="space-y-7">
       {items.map((item, index) => (
@@ -103,32 +103,18 @@ const Section: React.FC<SectionProps> = ({ title, items }) => (
 // Main component
 const ExpertCounselling: React.FC = () => {
   return (
-    <section className="bg-white w-full py-20">
-      <div className=" mx-10 lg:mx-32">
-        <div className="flex  flex-col gap-5 lg:gap-0 lg:flex-row lg:justify-between">
-          <div className="flex flex-col gap-3 justify-start">
-            <h1 className="text-xl  font-bold text-[#B298FE]">
-              Free for a Limited Period <span className="text-[#BDBEC2]">₹999/-</span>
-            </h1>
-            <h2 className="font-bold text-xl lg:text-[36px]">Book Your Expert Counselling Session Today!</h2>
-          </div>
-          <div>
-            <button className="bg-black cursor-pointer text-white text-xl lg:text-[26px] font-bold px-8 py-3 rounded-4xl">Book Now for Free</button>
-          </div>
-        </div>
-      </div>
-
-      <div className="bg-[#FAF1FD] mt-10 py-20">
+    <section className="bg-[#fcf9fe] w-full lg:py-20">
+      <div className="lg:mt-10 py-20">
         <div className="mx-10 lg:mx-32">
           <h1 className="font-bold text-center mb-10 lg:mb-24 text-[23px] lg:text-[45px]">
             We've Got You Covered, <span className="text-[#CEB3FE]">From Application to Arrival</span>
           </h1>
-          <div className="grid  grid-cols-1 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10">
             {sections.slice(0, 3).map((section, index) => (
               <Section key={index} title={section.title} items={section.items} />
             ))}
           </div>
-          <div className="grid  grid-cols-1 lg:grid-cols-3 gap-10 mt-32">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10 mt-20">
             {sections.slice(3).map((section, index) => (
               <Section key={index} title={section.title} items={section.items} />
             ))}

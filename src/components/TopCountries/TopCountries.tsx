@@ -23,7 +23,7 @@ const dummyData: dummyData[] = [
     id: 1,
     country: "United States of America",
     description: "World's largest economy, diverse job opportunities, and renowned universities with extensive research facilities.",
-    image: "/TopCountries/images/1.jpg",
+    image: "/TopCountries/images/1.webp",
     flag: "/TopCountries/flagLogos/1.png",
     alt: "Statue of Liberty",
   },
@@ -31,7 +31,7 @@ const dummyData: dummyData[] = [
     id: 2,
     country: "Canada",
     description: "Immigration-friendly policies, job-focused courses, and post-study work permits.",
-    image: "/TopCountries/images/2.jpg",
+    image: "/TopCountries/images/2.webp",
     flag: "/TopCountries/flagLogos/2.png",
     alt: "Golden Gate Bridge",
   },
@@ -39,7 +39,7 @@ const dummyData: dummyData[] = [
     id: 3,
     country: "Australia",
     description: "Globally recognized qualifications, scholarships, and strong industry connections.",
-    image: "/TopCountries/images/3.jpg",
+    image: "/TopCountries/images/3.webp",
     flag: "/TopCountries/flagLogos/3.png",
     alt: "New York Skyline",
   },
@@ -47,7 +47,7 @@ const dummyData: dummyData[] = [
     id: 4,
     country: "New Zealand",
     description: "High-quality education system, stunning landscapes, and work opportunities for international students.",
-    image: "/TopCountries/images/4.png",
+    image: "/TopCountries/images/4.webp",
     flag: "/TopCountries/flagLogos/4.png",
     alt: "Grand Canyon",
   },
@@ -55,7 +55,7 @@ const dummyData: dummyData[] = [
     id: 5,
     country: "Italy",
     description: "Rich cultural heritage, prestigious universities, and opportunities in arts, fashion, and humanities.",
-    image: "/TopCountries/images/5.jpg",
+    image: "/TopCountries/images/5.webp",
     flag: "/TopCountries/flagLogos/5.png",
     alt: "Statue of Liberty",
   },
@@ -63,7 +63,7 @@ const dummyData: dummyData[] = [
     id: 6,
     country: "United Kingdom",
     description: "Qualifications recognized worldwide, scholarships, and fee waivers for international students.",
-    image: "/TopCountries/images/6.jpg",
+    image: "/TopCountries/images/6.webp",
     flag: "/TopCountries/flagLogos/6.png",
     alt: "Golden Gate Bridge",
   },
@@ -71,7 +71,7 @@ const dummyData: dummyData[] = [
     id: 7,
     country: "Ireland",
     description: "High standard of education, vibrant cultural scene, and post-study work opportunities.",
-    image: "/TopCountries/images/7.png",
+    image: "/TopCountries/images/7.webp",
     flag: "/TopCountries/flagLogos/7.png",
     alt: "New York Skyline",
   },
@@ -79,7 +79,7 @@ const dummyData: dummyData[] = [
     id: 8,
     country: "France",
     description: "Renowned for arts and culture, prestigious institutions, and opportunities in fashion, culinary arts, and business.",
-    image: "/TopCountries/images/8.jpg",
+    image: "/TopCountries/images/8.webp",
     flag: "/TopCountries/flagLogos/8.png",
     alt: "Grand Canyon",
   },
@@ -87,7 +87,7 @@ const dummyData: dummyData[] = [
     id: 9,
     country: "Indonesia",
     description: "Growing economy, diverse cultural experiences, and affordable education options.",
-    image: "/TopCountries/images/9.jpg",
+    image: "/TopCountries/images/9.webp",
     flag: "/TopCountries/flagLogos/9.png",
     alt: "Statue of Liberty",
   },
@@ -95,7 +95,7 @@ const dummyData: dummyData[] = [
     id: 10,
     country: "Germany",
     description: "Strong economy, free or low-cost education, and opportunities in engineering, technology, and research.",
-    image: "/TopCountries/images/10.jpg",
+    image: "/TopCountries/images/10.webp",
     flag: "/TopCountries/flagLogos/10.png",
     alt: "Golden Gate Bridge",
   },
@@ -103,7 +103,7 @@ const dummyData: dummyData[] = [
     id: 11,
     country: "Japan",
     description: "Advanced technology, high-quality education, and unique cultural experiences.",
-    image: "/TopCountries/images/11.jpg",
+    image: "/TopCountries/images/11.webp",
     flag: "/TopCountries/flagLogos/11.png",
     alt: "New York Skyline",
   },
@@ -111,7 +111,7 @@ const dummyData: dummyData[] = [
     id: 12,
     country: "Sweden",
     description: "Innovative education system, focus on sustainability, and opportunities in technology and design.",
-    image: "/TopCountries/images/12.jpg",
+    image: "/TopCountries/images/12.webp",
     flag: "/TopCountries/flagLogos/12.png",
     alt: "Grand Canyon",
   },
@@ -119,7 +119,7 @@ const dummyData: dummyData[] = [
     id: 13,
     country: "Netherland",
     description: "High-quality education, English-taught programs, and strong international focus.",
-    image: "/TopCountries/images/13.jpg",
+    image: "/TopCountries/images/13.webp",
     flag: "/TopCountries/flagLogos/13.png",
     alt: "Statue of Liberty",
   },
@@ -127,7 +127,7 @@ const dummyData: dummyData[] = [
     id: 14,
     country: "Singapore",
     description: "Leading global financial hub, high standard of education, and multicultural environment.",
-    image: "/TopCountries/images/14.jpg",
+    image: "/TopCountries/images/14.webp",
     flag: "/TopCountries/flagLogos/14.png",
     alt: "Golden Gate Bridge",
   },
@@ -135,7 +135,7 @@ const dummyData: dummyData[] = [
     id: 15,
     country: "United Arab Emirates",
     description: "Rapidly growing economy, luxurious lifestyle, and opportunities in business and technology.",
-    image: "/TopCountries/images/15.jpg",
+    image: "/TopCountries/images/15.webp",
     flag: "/TopCountries/flagLogos/15.png",
     alt: "New York Skyline",
   },
@@ -143,7 +143,7 @@ const dummyData: dummyData[] = [
     id: 16,
     country: "Malta",
     description: "Advanced technology, high-quality education, and a vibrant cultural scene.",
-    image: "/TopCountries/images/16.jpg",
+    image: "/TopCountries/images/16.webp",
     flag: "/TopCountries/flagLogos/16.png",
     alt: "Grand Canyon",
   },
@@ -151,7 +151,7 @@ const dummyData: dummyData[] = [
     id: 17,
     country: "South Korea",
     description: "Choose the best university, country & course with expert guidance, ensuring a clear academic & career",
-    image: "/TopCountries/images/17.jpg",
+    image: "/TopCountries/images/17.webp",
     flag: "/TopCountries/flagLogos/17.png",
     alt: "Statue of Liberty",
   },
@@ -165,7 +165,7 @@ export default function UsaCard() {
   return (
     <section className="bg-white">
       <div className="container mx-auto py-20 relative text-center">
-        <div className="mb-10 mx-7 space-y-3">
+        <div className="mb-10 mx-7 space-y-5 lg:space-y-3">
           <h1 className="font-bold text-2xl lg:text-[45px]">
             Choose from the <span className="text-[#CEB3FE]">Top Countries to Study Abroad</span>
           </h1>
@@ -194,7 +194,7 @@ export default function UsaCard() {
         >
           {dummyData.map((card, index) => (
             <SwiperSlide key={index}>
-              <div className="max-w-sm bg-[#FDFAFE] h-[60vh] lg:h-[70vh] rounded-2xl p-4 text-center flex flex-col justify-between">
+              <div className="max-w-sm bg-[#FDFAFE] h-[65vh] lg:h-[70vh] rounded-2xl p-4 text-center flex flex-col justify-between">
                 <div className="relative">
                   <div className="w-full h-48 relative rounded-xl overflow-hidden">
                     <Image src={card.image} alt={card.alt} fill className="rounded-xl object-cover" priority />
