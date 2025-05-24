@@ -165,7 +165,7 @@ export default function UsaCard() {
   return (
     <section className="bg-white">
       <div className="container mx-auto py-20 relative text-center">
-        <div className="mb-10 mx-7 space-y-3">
+        <div className="mb-10 mx-7 space-y-5 lg:space-y-3">
           <h1 className="font-bold text-2xl lg:text-[45px]">
             Choose from the <span className="text-[#CEB3FE]">Top Countries to Study Abroad</span>
           </h1>
@@ -194,7 +194,7 @@ export default function UsaCard() {
         >
           {dummyData.map((card, index) => (
             <SwiperSlide key={index}>
-              <div className="max-w-sm bg-[#FDFAFE] h-[60vh] lg:h-[70vh] rounded-2xl p-4 text-center flex flex-col justify-between">
+              <div className="max-w-sm bg-[#FDFAFE] h-[65vh] lg:h-[70vh] rounded-2xl p-4 text-center flex flex-col justify-between">
                 <div className="relative">
                   <div className="w-full h-48 relative rounded-xl overflow-hidden">
                     <Image src={card.image} alt={card.alt} fill className="rounded-xl object-cover" priority />

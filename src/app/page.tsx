@@ -6,8 +6,6 @@ import FormComponent from "@/components/FormComponent/FormComponent";
 import HeroBanner from "@/components/HeroBanner/HeroBanner";
 import Layout from "@/components/Layout/Layout";
 import LimitedPeriod from "@/components/LimitedPeriod/LimitedPeriod";
-import { MapSection } from "@/components/MapSection/Mapsection";
-import ServiceSteps from "@/components/ServiceSteps/ServiceSteps";
 import UsaCard from "@/components/TopCountries/TopCountries";
 import UniversityPartners from "@/components/UniversityPartners/UniversityPartners";
 import { WhyChooseSection } from "@/components/WhyChooseSection/WhyChooseSection";
@@ -20,9 +18,6 @@ export default function Home() {
       <section>
         <HeroBanner />
       </section>
-      {/* <section>
-        <ServiceSteps />
-      </section> */}
       <section>
         <ExpertCounselling />
       </section>
@@ -32,9 +27,6 @@ export default function Home() {
       <section>
         <WhyChooseSection />
       </section>
-      {/* <section>
-        <MapSection />
-      </section> */}
       <section>
         <UsaCard />
       </section>
@@ -54,7 +46,7 @@ export default function Home() {
         <FormComponent />
       </section>
       <section>
-        <LimitedPeriod/>
+        <LimitedPeriod />
       </section>
     </Layout>
   );

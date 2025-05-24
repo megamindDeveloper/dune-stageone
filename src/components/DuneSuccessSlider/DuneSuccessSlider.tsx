@@ -81,7 +81,7 @@ const DuneSuccessSlider: React.FC = () => {
   return (
     <div className="w-full mx-auto py-12 md:py-24 bg-white">
       <div className="text-center mb-8 lg:mb-32">
-        <h1 className="text-2xl md:text-[44px] font-bold mb-2">
+        <h1 className="text-2xl md:text-[44px] font-bold mb-5">
           Dune’s Secret to <span className="text-purple-400">Success</span>
         </h1>
         <p className="text-gray-600">Real students, real experiences - see how Dune made studying abroad possible</p>
@@ -205,7 +205,14 @@ const DuneSuccessSlider: React.FC = () => {
                                 aria-label={isPlaying ? "Pause" : "Play"}
                               >
                                 {isPlaying ? (
-                                  <svg width="32" height="32" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg" className="md:w-[37px] md:h-[37px]">
+                                  <svg
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 37 37"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="md:w-[37px] md:h-[37px]"
+                                  >
                                     <rect x="0.5" y="0.851562" width="36" height="36" rx="18" fill="#E8E8ED" />
                                     <path
                                       d="M15.25 11.8516H13.75C12.9216 11.8516 12.25 12.5231 12.25 13.3516V24.3516C12.25 25.18 12.9216 25.8516 13.75 25.8516H15.25C16.0784 25.8516 16.75 25.18 16.75 24.3516V13.3516C16.75 12.5231 16.0784 11.8516 15.25 11.8516Z"
@@ -219,7 +226,14 @@ const DuneSuccessSlider: React.FC = () => {
                                     />
                                   </svg>
                                 ) : (
-                                  <svg width="32" height="32" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg" className="md:w-[37px] md:h-[37px]">
+                                  <svg
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 37 37"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="md:w-[37px] md:h-[37px]"
+                                  >
                                     <rect x="0.140625" y="0.261719" width="36" height="36" rx="18" fill="#E8E8ED" />
                                     <path
                                       d="M13.1441 23.5118V13.0318C13.1184 12.8282 13.1366 12.6214 13.1974 12.4254C13.2582 12.2293 13.3602 12.0485 13.4965 11.8951C13.6329 11.7417 13.8005 11.6192 13.9881 11.5359C14.1756 11.4525 14.3789 11.4102 14.5841 11.4118C14.9776 11.3951 15.3663 11.5036 15.6941 11.7218L24.2241 16.7218C24.9841 17.1618 25.3941 17.5218 25.3941 18.2318C25.3941 18.9418 24.9841 19.3018 24.2241 19.7418L15.6941 24.7418C15.3663 24.9601 14.9776 25.0686 14.5841 25.0518C14.3854 25.0554 14.1882 25.0171 14.0052 24.9396C13.8222 24.8621 13.6575 24.7471 13.5218 24.6019C13.3861 24.4568 13.2823 24.2847 13.2173 24.097C13.1522 23.9092 13.1273 23.7099 13.1441 23.5118Z"
@@ -241,7 +255,7 @@ const DuneSuccessSlider: React.FC = () => {
           })}
 
           {/* Navigation Buttons - Bottom Left */}
-          <div className="flex justify-between w-full md:w-[65%] mx-auto mt-2 lg:mt-12">
+          <div className="flex justify-between items-center w-full md:w-[65%] mx-auto mt-2 lg:mt-12">
             <div className="flex gap-2 z-10 p-4">
               <button
                 ref={prevRef}

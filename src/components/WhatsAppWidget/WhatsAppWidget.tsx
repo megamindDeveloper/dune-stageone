@@ -68,6 +68,12 @@ const WhatsappChatWidget = () => {
         .wa-chat-box::after {
           border-width: 0px 0px 0px 0px !important;
         }
+           /* Hide widget on mobile devices */
+  @media (max-width: 768px) {
+    .wa-widget-send-button,
+    .wa-chat-box {
+      display: none !important;
+    }
       `}</style>
       <Script
         src="https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?50756"
