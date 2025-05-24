@@ -189,12 +189,13 @@ export default function UsaCard() {
             320: { slidesPerView: 1, spaceBetween: 10 },
             640: { slidesPerView: 2, spaceBetween: 15 },
             1024: { slidesPerView: 3, spaceBetween: 20 },
+            1224: { slidesPerView: 4, spaceBetween: 20 },
           }}
           className="mySwiper"
         >
           {dummyData.map((card, index) => (
             <SwiperSlide key={index}>
-              <div className="max-w-sm bg-[#FDFAFE] h-[65vh] lg:h-[70vh] rounded-2xl p-4 text-center flex flex-col justify-between">
+              <div className="max-w-sm bg-[#FDFAFE] h-[500px] rounded-2xl p-4 text-center flex flex-col justify-between">
                 <div className="relative">
                   <div className="w-full h-48 relative rounded-xl overflow-hidden">
                     <Image src={card.image} alt={card.alt} fill className="rounded-xl object-cover" priority />
@@ -206,14 +207,11 @@ export default function UsaCard() {
                   </div>
                 </div>
                 <div className="mt-16 flex flex-col justify-between h-[calc(100%-12rem)]">
-                  <div>
+                  <div className="flex-1 overflow-y-auto">
                     <h2 className="text-[28px] font-extrabold text-gray-900">{card.country}</h2>
                     <p className="text-[#86868B] text-xl mt-2 px-2">{card.description}</p>
                   </div>
-                  <a
-                    href="#"
-                    className="text-[#5D5FDC] text-xl font-extrabold mt-4 inline-block hover:underline "
-                  >
+                  <a href="#" className="text-[#5D5FDC] text-xl font-extrabold mt-4 inline-block hover:underline">
                     Learn More
                   </a>
                 </div>
