@@ -40,41 +40,85 @@ const WhatsappChatWidget = () => {
   );
 
   useEffect(() => {
-    if (typeof window !== "undefined" && window.CreateWhatsappChatWidget) {
-      window.CreateWhatsappChatWidget(options);
-    }
+    const applyCustomStyles = () => {
+      const button = document.querySelector(".wa-widget-send-button");
+      const chatBox = document.querySelector(".wa-chat-box");
+
+      if (button instanceof HTMLElement) {
+        Object.assign(button.style, {
+          position: "fixed",
+          top: "50px",
+          right: "20px",
+          backgroundColor: "black",
+          zIndex: "9999",
+        });
+      }
+
+      if (chatBox instanceof HTMLElement) {
+        Object.assign(chatBox.style, {
+          position: "fixed",
+          top: "110px",
+          right: "35px",
+          height: "30vh",
+          zIndex: "9999",
+        });
+      }
+    };
+
+    const initWidget = () => {
+      if (window.CreateWhatsappChatWidget) {
+        window.CreateWhatsappChatWidget(options);
+
+        const observer = new MutationObserver(() => {
+          applyCustomStyles();
+        });
+
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true,
+        });
+
+        // Fallback timeout just in case
+        setTimeout(applyCustomStyles, 2000);
+      }
+    };
+
+    setTimeout(initWidget, 1000);
   }, [options]);
 
   return (
     <>
       <style jsx global>{`
         .wa-widget-send-button {
-          bottom: auto !important;
-          top: 20px !important;
+          position: fixed !important;
+          top: 50px !important;
           right: 20px !important;
           background-color: black !important;
+          z-index: 9999 !important;
         }
+
         .wa-chat-box {
-          bottom: auto !important;
-          top: 80px !important;
-          right: 20px !important;
-          margin-bottom: 0 !important;
-          justify-content: flex-start !important;
+          position: fixed !important;
+          top: 110px !important;
+          right: 35px !important;
           height: 30vh !important;
+          justify-content: flex-start !important;
+          z-index: 9999 !important;
         }
-        .wa-chat-box::before {
-          border-width: 0px 0px 0px 0px !important;
-        }
+
+        .wa-chat-box::before,
         .wa-chat-box::after {
-          border-width: 0px 0px 0px 0px !important;
+          border-width: 0px !important;
         }
-           /* Hide widget on mobile devices */
-  @media (max-width: 768px) {
-    .wa-widget-send-button,
-    .wa-chat-box {
-      display: none !important;
-    }
+
+        @media (max-width: 768px) {
+          .wa-widget-send-button,
+          .wa-chat-box {
+            display: none !important;
+          }
+        }
       `}</style>
+
       <Script
         src="https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?50756"
         strategy="lazyOnload"
