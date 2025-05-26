@@ -5,7 +5,7 @@ import WhatsappChatWidget from "../WhatsAppWidget/WhatsAppWidget";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between  p-4 lg:p-12 bg-[#faf2fe] md:px-24">
+    <nav className="flex items-center justify-between overflow-hidden  p-4 lg:p-12 bg-[#faf2fe] md:px-24">
       {/* Left Section: Icon and Title */}
       <Link href="/" aria-label="Go to homepage">
         <div className="flex cursor-pointer items-center  md:mx-0 space-x-2 lg:space-x-3 ">
@@ -20,7 +20,7 @@ const Navbar = () => {
       </Link>
 
       {/* Right Section: Contact Info */}
-      <div className="text-right hidden md:block">
+      <div className="text-right hidden md:block me-10">
         <p className="text-[14px] text-[#29357299] md:text-[18px]">For Free Counselling Contact</p>
         <Link href="tel:+918792358999" ><p className="text-[14px] font-semibold text-[#293572] md:text-[18px]">+91 879 235 8999</p></Link>      </div>
         <WhatsappChatWidget/>

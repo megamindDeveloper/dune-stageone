@@ -3,11 +3,12 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import FancyModal from "../AnimatedModal/AnimatedModal";
 
 interface dummyData {
   id: number;
@@ -16,12 +17,14 @@ interface dummyData {
   image: string;
   flag: string;
   alt: string;
+  univercities?: {name: string; image: string}[]; // Optional property for university
 }
 
 const dummyData: dummyData[] = [
   {
     id: 1,
     country: "United States of America",
+    univercities: [{name:"University of Southern Maine",image:"/TopCountries/univercity/1.png"},{name:"Trinity College Dublin",image:"/TopCountries/univercity/2.png"},{name:"Trinity College Dublin",image:"/TopCountries/univercity/3.png"},{name:"University College Cork",image:"/TopCountries/univercity/4.png"},{name:"UCD Dublin",image:"/TopCountries/univercity/5.png"}],
     description: "World's largest economy, diverse job opportunities, and renowned universities with extensive research facilities.",
     image: "/TopCountries/countryImages/1.webp",
     flag: "/TopCountries/flagLogos/1.png",
@@ -34,6 +37,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/2.webp",
     flag: "/TopCountries/flagLogos/2.png",
     alt: "Golden Gate Bridge",
+    univercities: [{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},]
   },
   {
     id: 3,
@@ -42,6 +46,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/3.webp",
     flag: "/TopCountries/flagLogos/3.png",
     alt: "New York Skyline",
+    univercities: [{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},]
   },
   {
     id: 4,
@@ -50,6 +55,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/4.webp",
     flag: "/TopCountries/flagLogos/4.png",
     alt: "Grand Canyon",
+    univercities: [{name:"University of Otago",image:"/TopCountries/univercity/6.png"},{name:"Massey University",image:"/TopCountries/univercity/7.png"},{name:" University of Auckland",image:"/TopCountries/univercity/8.png"},{name:"University of Canterbury",image:"/TopCountries/univercity/9.png"},{name:"Victoria university of Wellington",image:"/TopCountries/univercity/10.png"},]
   },
   {
     id: 5,
@@ -58,6 +64,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/5.webp",
     flag: "/TopCountries/flagLogos/5.png",
     alt: "Statue of Liberty",
+    univercities: [{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},]
   },
   {
     id: 6,
@@ -66,6 +73,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/6.webp",
     flag: "/TopCountries/flagLogos/6.png",
     alt: "Golden Gate Bridge",
+    univercities: [{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},]
   },
   {
     id: 7,
@@ -74,6 +82,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/7.webp",
     flag: "/TopCountries/flagLogos/7.png",
     alt: "New York Skyline",
+    univercities: [{name:"University of Southern Maine",image:"/TopCountries/univercity/1.png"},{name:"Trinity College Dublin",image:"/TopCountries/univercity/2.png"},{name:"Trinity College Dublin",image:"/TopCountries/univercity/3.png"},{name:"University College Cork",image:"/TopCountries/univercity/4.png"},{name:"UCD Dublin",image:"/TopCountries/univercity/5.png"}]
   },
   {
     id: 8,
@@ -82,6 +91,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/8.webp",
     flag: "/TopCountries/flagLogos/8.png",
     alt: "Grand Canyon",
+    univercities: [{name:"University of Southern Maine",image:"/TopCountries/univercity/16.png"},{name:"University of Southern Maine",image:"/TopCountries/univercity/17.png"},{name:"University of Southern Maine",image:"/TopCountries/univercity/18.png"},{name:"University of Southern Maine",image:"19"},{name:"University of Southern Maine",image:"/TopCountries/univercity/20.png"}]
   },
   {
     id: 9,
@@ -90,6 +100,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/9.webp",
     flag: "/TopCountries/flagLogos/9.png",
     alt: "Statue of Liberty",
+    univercities: [{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},]
   },
   {
     id: 10,
@@ -98,6 +109,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/10.webp",
     flag: "/TopCountries/flagLogos/10.png",
     alt: "Golden Gate Bridge",
+    univercities: [{name:"Frankfurt School of Finance & Management",image:"/TopCountries/univercity/11.png"},{name:"University of Southern Maine",image:"/TopCountries/univercity/12.png"},{name:"University of Southern Maine",image:"/TopCountries/univercity/13.png"},{name:"University of Southern Maine",image:"/TopCountries/univercity/14.png"},{name:"University of Southern Maine",image:"/TopCountries/univercity/15.png"}]
   },
   {
     id: 11,
@@ -106,6 +118,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/11.webp",
     flag: "/TopCountries/flagLogos/11.png",
     alt: "New York Skyline",
+    univercities: [{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},]
   },
   {
     id: 12,
@@ -114,6 +127,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/12.webp",
     flag: "/TopCountries/flagLogos/12.png",
     alt: "Grand Canyon",
+    univercities: [{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},]
   },
   {
     id: 13,
@@ -122,14 +136,16 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/13.webp",
     flag: "/TopCountries/flagLogos/13.png",
     alt: "Statue of Liberty",
+    univercities: [{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},]
   },
   {
     id: 14,
-    country: "Singapore",
-    description: "Leading global financial hub, high standard of education, and multicultural environment.",
+    country: "Malaysia",
+    description: "A dynamic education system, breathtaking landscapes, and abundant work opportunities make it an attractive destination for international students.",
     image: "/TopCountries/countryImages/14.webp",
     flag: "/TopCountries/flagLogos/14.png",
     alt: "Golden Gate Bridge",
+    univercities: [{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},]
   },
   {
     id: 15,
@@ -138,6 +154,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/15.webp",
     flag: "/TopCountries/flagLogos/15.png",
     alt: "New York Skyline",
+    univercities: [{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},]
   },
   {
     id: 16,
@@ -146,6 +163,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/16.webp",
     flag: "/TopCountries/flagLogos/16.png",
     alt: "Grand Canyon",
+    univercities: [{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},]
   },
   {
     id: 17,
@@ -154,6 +172,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/17.webp",
     flag: "/TopCountries/flagLogos/17.png",
     alt: "Statue of Liberty",
+    univercities: [{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},]
   },
 ];
 
@@ -161,10 +180,13 @@ export default function UsaCard() {
   const prevRef = useRef<HTMLButtonElement>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
   const swiperRef = useRef<any>(null); // Ref to store Swiper instance
+  const [open, setOpen] = useState(false); // State to manage modal visibility
+  const [selectedCountry, setSelectedCountry] = useState<dummyData | undefined>();
+  
 
   return (
     <section className="bg-white">
-      <div className="container mx-auto py-20 relative text-center">
+      <div className="container  mx-auto py-20 relative text-center">
         <div className="lg:mb-14 mb-8 mx-7 space-y-5 lg:space-y-3">
           <h1 className="font-bold text-2xl lg:text-[45px]">
             Choose from the <span className="text-[#CEB3FE]">Top Countries to Study Abroad</span>
@@ -174,7 +196,7 @@ export default function UsaCard() {
           </h3>
         </div>
         <Swiper
-          modules={[Navigation, Autoplay]}
+          modules={[Navigation]}
           loop={true}
           autoplay={{
             delay: 2000, // Time in ms between slides (3 seconds)
@@ -190,13 +212,14 @@ export default function UsaCard() {
             320: { slidesPerView: 1, spaceBetween: 10 },
             640: { slidesPerView: 2, spaceBetween: 15 },
             1024: { slidesPerView: 3, spaceBetween: 20 },
-            1224: { slidesPerView: 4, spaceBetween: 20 },
+            1200: { slidesPerView: 3, spaceBetween: 20 },
+            1580: { slidesPerView: 4, spaceBetween: 20 },
           }}
           className="mySwiper"
         >
           {dummyData.map((card, index) => (
             <SwiperSlide key={index}>
-              <div className="max-w-sm bg-[#FDFAFE] h-[500px] rounded-2xl p-4 text-center flex flex-col justify-between">
+              <div className=" lg:max-w-sm bg-[#FDFAFE] h-[500px] rounded-2xl p-4 text-center flex flex-col justify-between">
                 <div className="relative">
                   <div className="w-full h-48 relative rounded-xl overflow-hidden">
                     <Image src={card.image} alt={card.alt} fill className="rounded-xl object-cover" priority />
@@ -212,9 +235,9 @@ export default function UsaCard() {
                     <h2 className="text-[28px] font-extrabold text-gray-900">{card.country}</h2>
                     <p className="text-[#86868B] text-xl mt-2 px-2">{card.description}</p>
                   </div>
-                  <a href="#" className="text-[#5D5FDC] text-xl font-extrabold mt-4 inline-block hover:underline">
+                  <button onClick={()=>{setOpen(true);setSelectedCountry(card)}} className="text-[#5D5FDC] text-xl font-extrabold mt-4 inline-block hover:underline">
                     Learn More
-                  </a>
+                  </button>
                 </div>
               </div>
             </SwiperSlide>
@@ -240,6 +263,7 @@ export default function UsaCard() {
           </button>
         </div>
       </div>
+      <FancyModal open={open} handleClose={setOpen} data={selectedCountry ? selectedCountry : undefined} />
     </section>
   );
 }
