@@ -103,18 +103,18 @@ const Section: React.FC<SectionProps> = ({ title, items }) => (
 // Main component
 const ExpertCounselling: React.FC = () => {
   return (
-    <section className="bg-[#fcf9fe] w-full lg:py-20">
+    <section className="bg-[#fcf9fe] w-full ">
       <div className="lg:mt-10 py-20">
         <div className="mx-10 lg:mx-32">
           <h1 className="font-bold text-center mb-10 lg:mb-24 text-[23px] lg:text-[45px]">
             We've Got You Covered, <span className="text-[#CEB3FE]">From Application to Arrival</span>
           </h1>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-4">
             {sections.slice(0, 3).map((section, index) => (
               <Section key={index} title={section.title} items={section.items} />
             ))}
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10 mt-20">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-4 mt-4">
             {sections.slice(3).map((section, index) => (
               <Section key={index} title={section.title} items={section.items} />
             ))}

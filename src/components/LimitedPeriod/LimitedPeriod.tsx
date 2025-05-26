@@ -50,21 +50,21 @@ const LimitedPeriod = () => {
             : "relative"
         }`}
       >
-        <div className="mx-10 lg:mx-32">
-          <div className="flex flex-col gap-5 lg:gap-0 lg:flex-row lg:justify-between">
-            <div className="flex flex-col gap-3 justify-start">
-              <h1 className="text-xl font-bold text-[#B298FE]">
+        <div className="mx-4 lg:mx-32">
+          <div className="flex flex-col gap-2 lg:gap-0 lg:flex-row lg:justify-between">
+            <div className="flex flex-col justify-start">
+              <h1 className="lg:text-xl  font-bold text-[#B298FE]">
                 Free for a Limited Period{" "}
                 <span className="text-[#BDBEC2] line-through decoration-2">
                   ₹999/-
                 </span>
               </h1>
-              <h2 className="font-bold text--[17px] lg:text-[36px]">
+              <h2 className="font-bold lg:text-[17px] lg2:text-3xl xl:text-[36px]">
                 Book Your Expert Counselling Session Today!
               </h2>
             </div>
-            <div>
-              <button className="bg-black cursor-pointer text-white text-lg px-3 lg:text-[26px] font-bold lg:px-8 lg:py-3 rounded-4xl">
+            <div className="flex items-center">
+              <button className="bg-black cursor-pointer text-white lg:text-lg px-3   xl:text-[26px] font-bold lg:px-8 lg:py-3 py-2 rounded-4xl">
                 Book Now for Free
               </button>
             </div>

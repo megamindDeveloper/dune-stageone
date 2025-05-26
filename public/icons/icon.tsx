@@ -150,7 +150,7 @@ export const icon = () => {
 
 export function NavIcon2() {
   return (
-    <svg width="180" height="50" viewBox="0 0 303 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className="xl:w-[303px] xl:h-[89px] lg:w-[200px] lg:h-[60px]  md:w-[150px] md:h-[40px] w-[215px] h-[60px]" viewBox="0 0 303 89" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M33.19 69.6597C49.3498 69.6597 62.45 56.5595 62.45 40.3997C62.45 24.2398 49.3498 11.1396 33.19 11.1396C17.0301 11.1396 3.92999 24.2398 3.92999 40.3997C3.92999 56.5595 17.0301 69.6597 33.19 69.6597Z"
         fill="url(#paint0_radial_119_4)"
@@ -399,7 +399,7 @@ export function NavIcon2() {
 
 export function NavIcon1() {
   return (
-    <svg width="150" height="50" viewBox="0 0 244 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg  className="xl:w-[244px] xl:h-[77px] lg:w-[200px] lg:h-[60px] md:w-[150px] md:h-[40px] w-[173px] h-[54px]" viewBox="0 0 244 77" fill="none" xmlns="http://www.w3.org/2000/svg">
       <mask id="mask0_3_1792" style={{ maskType: "luminance" }} maskUnits="userSpaceOnUse" x="0" y="0" width="77" height="77">
         <path
           d="M38.1001 77C59.1422 77 76.2002 59.942 76.2002 38.8999C76.2002 17.8578 59.1422 0.799805 38.1001 0.799805C17.058 0.799805 0 17.8578 0 38.8999C0 59.942 17.058 77 38.1001 77Z"
