@@ -141,7 +141,7 @@ const dummyData: dummyData[] = [
   {
     id: 14,
     country: "Malaysia",
-    description: "Leading global financial hub, high standard of education, and multicultural environment.",
+    description: "A dynamic education system, breathtaking landscapes, and abundant work opportunities make it an attractive destination for international students.",
     image: "/TopCountries/countryImages/14.webp",
     flag: "/TopCountries/flagLogos/14.png",
     alt: "Golden Gate Bridge",
