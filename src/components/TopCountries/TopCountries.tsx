@@ -24,7 +24,7 @@ const dummyData: dummyData[] = [
   {
     id: 1,
     country: "United States of America",
-    univercities: [{name:"University of Southern Maine",image:"/TopCountries/univercity/1.png"},{name:"Trinity College Dublin",image:"/TopCountries/univercity/2.png"},{name:"Trinity College Dublin",image:"/TopCountries/univercity/3.png"},{name:"University College Cork",image:"/TopCountries/univercity/4.png"},{name:"UCD Dublin",image:"/TopCountries/univercity/5.png"}],
+    univercities: [{name:"Harvard University",image:"/TopCountries/university/51.png"},{name:"Harvard University",image:"/TopCountries/university/52.png"},{name:"Stanford University",image:"/TopCountries/university/53.png"},{name:"University of California, Berkeley (UCB)",image:"/TopCountries/university/54.png"},{name:"California Institute of Technology (Caltech)",image:"/TopCountries/university/55.png"}],
     description: "World's largest economy, diverse job opportunities, and renowned universities with extensive research facilities.",
     image: "/TopCountries/countryImages/1.webp",
     flag: "/TopCountries/flagLogos/1.png",
@@ -37,7 +37,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/2.webp",
     flag: "/TopCountries/flagLogos/2.png",
     alt: "Golden Gate Bridge",
-    univercities: [{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},]
+    univercities: [{name:"University of Alberta",image:"/TopCountries/university/31.png"},{name:"McGill",image:"/TopCountries/university/32.png"},{name:"University of Toronto",image:"/TopCountries/university/33.png"},{name:"The University of British Columbia",image:"/TopCountries/university/34.png"},{name:"Youk U",image:"/TopCountries/university/35.png"}]
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/3.webp",
     flag: "/TopCountries/flagLogos/3.png",
     alt: "New York Skyline",
-    univercities: [{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},]
+    univercities: [{name:"University of Sydney",image:"/TopCountries/university/36.png"},{name:"UNSW Sydney",image:"/TopCountries/university/37.png"},{name:"The university of melbourne",image:"/TopCountries/university/38.png"},{name:"The University of Queensland Australia",image:"/TopCountries/university/39.png"},{name:"Monash University",image:"/TopCountries/university/40.png"}]
   },
   {
     id: 4,
@@ -55,7 +55,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/4.webp",
     flag: "/TopCountries/flagLogos/4.png",
     alt: "Grand Canyon",
-    univercities: [{name:"University of Otago",image:"/TopCountries/univercity/6.png"},{name:"Massey University",image:"/TopCountries/univercity/7.png"},{name:" University of Auckland",image:"/TopCountries/univercity/8.png"},{name:"University of Canterbury",image:"/TopCountries/univercity/9.png"},{name:"Victoria university of Wellington",image:"/TopCountries/univercity/10.png"},]
+    univercities: [{name:"University of Otago",image:"/TopCountries/university/6.png"},{name:"Massey University",image:"/TopCountries/university/7.png"},{name:" University of Auckland",image:"/TopCountries/university/8.png"},{name:"University of Canterbury",image:"/TopCountries/university/9.png"},{name:"Victoria university of Wellington",image:"/TopCountries/university/10.png"},]
   },
   {
     id: 5,
@@ -64,7 +64,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/5.webp",
     flag: "/TopCountries/flagLogos/5.png",
     alt: "Statue of Liberty",
-    univercities: [{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},]
+    univercities: [{name:"Politecnico di Milano",image:"/TopCountries/university/56.png"},{name:"Sapienza University of Rome",image:"/TopCountries/university/57.png"},{name:"University of Bologna",image:"/TopCountries/university/58.png"},{name:"University of Padua",image:"/TopCountries/university/59.png"},{name:"University of Milan",image:"/TopCountries/university/60.png"}]
   },
   {
     id: 6,
@@ -73,7 +73,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/6.webp",
     flag: "/TopCountries/flagLogos/6.png",
     alt: "Golden Gate Bridge",
-    univercities: [{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},]
+    univercities: [{name:"University of Glasgow",image:"/TopCountries/university/41.png"},{name:"University of Birmingham",image:"/TopCountries/university/42.png"},{name:" Kings College London ",image:"/TopCountries/university/43.png"},{name:"The University of Manchester 1824",image:"/TopCountries/university/44.png"},{name:"The University of Edinburgh",image:"/TopCountries/university/45.png"}]
   },
   {
     id: 7,
@@ -82,7 +82,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/7.webp",
     flag: "/TopCountries/flagLogos/7.png",
     alt: "New York Skyline",
-    univercities: [{name:"University of Southern Maine",image:"/TopCountries/univercity/1.png"},{name:"Trinity College Dublin",image:"/TopCountries/univercity/2.png"},{name:"Trinity College Dublin",image:"/TopCountries/univercity/3.png"},{name:"University College Cork",image:"/TopCountries/univercity/4.png"},{name:"UCD Dublin",image:"/TopCountries/univercity/5.png"}]
+    univercities: [{name:"University of Southern Maine",image:"/TopCountries/university/1.png"},{name:" DCU Dublin City University",image:"/TopCountries/university/2.png"},{name:"Trinity College Dublin",image:"/TopCountries/university/3.png"},{name:"University College Cork",image:"/TopCountries/university/4.png"},{name:"UCD Dublin",image:"/TopCountries/university/5.png"}]
   },
   {
     id: 8,
@@ -91,7 +91,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/8.webp",
     flag: "/TopCountries/flagLogos/8.png",
     alt: "Grand Canyon",
-    univercities: [{name:"University of Southern Maine",image:"/TopCountries/univercity/16.png"},{name:"University of Southern Maine",image:"/TopCountries/univercity/17.png"},{name:"University of Southern Maine",image:"/TopCountries/univercity/18.png"},{name:"University of Southern Maine",image:"19"},{name:"University of Southern Maine",image:"/TopCountries/univercity/20.png"}]
+    univercities: [{name:"University Paris Saclay",image:"/TopCountries/university/21.png"},{name:"Republique Francaise",image:"/TopCountries/university/22.png"},{name:"Sorbonne University",image:"/TopCountries/university/23.png"},{name:"University De Lyon",image:"/TopCountries/university/24.png"},{name:"University de Bordeaux",image:"/TopCountries/university/25.png"}]
   },
   {
     id: 9,
@@ -100,7 +100,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/9.webp",
     flag: "/TopCountries/flagLogos/9.png",
     alt: "Statue of Liberty",
-    univercities: [{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},]
+    univercities: [{name:"University of Indonesia",image:"/TopCountries/university/61.png"},{name:"Gadjah Mada University",image:"/TopCountries/university/62.png"},{name:"Bandung Institute of Technology",image:"/TopCountries/university/63.png"},{name:"Diponegoro University",image:"/TopCountries/university/64.png"},{name:"Padjadjaran University",image:"/TopCountries/university/65.png"}]
   },
   {
     id: 10,
@@ -109,7 +109,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/10.webp",
     flag: "/TopCountries/flagLogos/10.png",
     alt: "Golden Gate Bridge",
-    univercities: [{name:"Frankfurt School of Finance & Management",image:"/TopCountries/univercity/11.png"},{name:"University of Southern Maine",image:"/TopCountries/univercity/12.png"},{name:"University of Southern Maine",image:"/TopCountries/univercity/13.png"},{name:"University of Southern Maine",image:"/TopCountries/univercity/14.png"},{name:"University of Southern Maine",image:"/TopCountries/univercity/15.png"}]
+    univercities: [{name:"Frankfurt School of Finance & Management",image:"/TopCountries/university/11.png"},{name:"University of Mannheim",image:"/TopCountries/university/12.png"},{name:"Rwthaachen University",image:"/TopCountries/university/13.png"},{name:"Technical university of Munich",image:"/TopCountries/university/14.png"},{name:"Georg august university",image:"/TopCountries/university/15.png"}]
   },
   {
     id: 11,
@@ -118,7 +118,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/11.webp",
     flag: "/TopCountries/flagLogos/11.png",
     alt: "New York Skyline",
-    univercities: [{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},]
+    univercities: [{name:"University of Tokyo",image:"/TopCountries/university/66.png"},{name:"Kyoto University",image:"/TopCountries/university/67.png"},{name:"Osaka University",image:"/TopCountries/university/68.png"},{name:"Tohoku University",image:"/TopCountries/university/69.png"},{name:"Keio University",image:"/TopCountries/university/70.png"}]
   },
   {
     id: 12,
@@ -127,7 +127,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/12.webp",
     flag: "/TopCountries/flagLogos/12.png",
     alt: "Grand Canyon",
-    univercities: [{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},]
+    univercities: [{name:"KTH Royal Institute of Technology",image:"/TopCountries/university/71.png"},{name:"Lund University",image:"/TopCountries/university/72.png"},{name:"Uppsala University",image:"/TopCountries/university/73.png"},{name:"Stockholm University",image:"/TopCountries/university/74.png"},{name:"Chalmers University of Technology",image:"/TopCountries/university/75.png"}]
   },
   {
     id: 13,
@@ -136,7 +136,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/13.webp",
     flag: "/TopCountries/flagLogos/13.png",
     alt: "Statue of Liberty",
-    univercities: [{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},]
+    univercities: [{name:"Delft University of Technology",image:"/TopCountries/university/76.png"},{name:"University of Amsterdam",image:"/TopCountries/university/77.png"},{name:"Utrecht University",image:"/TopCountries/university/78.png"},{name:"Eindhoven University of Technology",image:"/TopCountries/university/79.png"},{name:"Leiden University",image:"/TopCountries/university/80.png"}]
   },
   {
     id: 14,
@@ -145,7 +145,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/14.webp",
     flag: "/TopCountries/flagLogos/14.png",
     alt: "Golden Gate Bridge",
-    univercities: [{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},]
+    univercities: [{name:"University Putra Malaysia",image:"/TopCountries/university/16.png"},{name:"University Kebangsaan Malaysia",image:"/TopCountries/university/17.png"},{name:"University Teknologi Malaysia",image:"/TopCountries/university/18.png"},{name:"University Sains Malaysia",image:"/TopCountries/university/19.png"},{name:"University Malaya",image:"/TopCountries/university/20.png"}]
   },
   {
     id: 15,
@@ -154,7 +154,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/15.webp",
     flag: "/TopCountries/flagLogos/15.png",
     alt: "New York Skyline",
-    univercities: [{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},]
+    univercities: [{name:"University of Birmingham",image:"/TopCountries/university/46.png"},{name:"University of Dubai",image:"/TopCountries/university/47.png"},{name:"Bits Pilani Dubai Campus",image:"/TopCountries/university/48.png"},{name:"University of Wollongong",image:"/TopCountries/university/49.png"},{name:"Amity University Dubai",image:"/TopCountries/university/50.png"}]
   },
   {
     id: 16,
@@ -163,7 +163,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/16.webp",
     flag: "/TopCountries/flagLogos/16.png",
     alt: "Grand Canyon",
-    univercities: [{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},]
+    univercities: [{name:"GBSB Global business school",image:"/TopCountries/university/26.png"},{name:"L- University Malta",image:"/TopCountries/university/27.png"},{name:"American University of Malta",image:"/TopCountries/university/28.png"},{name:"GBS Malta",image:"/TopCountries/university/29.png"},{name:"Malta college of Arts and Science Technology",image:"/TopCountries/university/30.png"}]
   },
   {
     id: 17,
@@ -172,7 +172,7 @@ const dummyData: dummyData[] = [
     image: "/TopCountries/countryImages/17.webp",
     flag: "/TopCountries/flagLogos/17.png",
     alt: "Statue of Liberty",
-    univercities: [{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},{name:"University of Southern Maine",image:""},]
+    univercities: [{name:"Seoul National University",image:"/TopCountries/university/81.png"},{name:"Yonsei University",image:"/TopCountries/university/82.png"},{name:"KAIST (Korea Advanced Institute of Science and Technology)",image:"/TopCountries/university/83.png"},{name:"Korea University",image:"/TopCountries/university/84.png"},{name:"Pohang University of Science and Technology (POSTECH)",image:"/TopCountries/university/85.png"}]
   },
 ];
 
@@ -219,7 +219,7 @@ export default function UsaCard() {
         >
           {dummyData.map((card, index) => (
             <SwiperSlide key={index}>
-              <div className=" lg:max-w-sm bg-[#FDFAFE] h-[500px] rounded-2xl p-4 text-center flex flex-col justify-between">
+              <div className=" lg:max-w-sm bg-[#FDFAFE] h-[530px] rounded-2xl p-4 text-center flex flex-col justify-between">
                 <div className="relative">
                   <div className="w-full h-48 relative rounded-xl overflow-hidden">
                     <Image src={card.image} alt={card.alt} fill className="rounded-xl object-cover" priority />
