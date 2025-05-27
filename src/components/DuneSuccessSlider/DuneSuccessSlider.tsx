@@ -60,7 +60,7 @@ const DuneSuccessSlider: React.FC = () => {
               ref={(el) => {
                 if (el) videoRefs.current[0] = el;
               }}
-              poster="https://res.cloudinary.com/dvandhsai/image/upload/v1748235869/tjwamwp1yi36zwntg0xc.jpg" 
+              poster="https://res.cloudinary.com/dvandhsai/image/upload/v1748335648/kxne6oj8wfbhy839ints.png" 
               className="rounded-3xl w-full h-full object-cover" 
               loop 
               playsInline 
