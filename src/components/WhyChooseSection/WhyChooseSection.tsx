@@ -14,14 +14,7 @@ export function WhyChooseSection() {
         </div>
 
         <p className="text-[#86868B] text-base sm:text-lg lg:text-xl leading-relaxed">
-          Studying abroad isn&apos;t just about earning a degree—it&apos;s about unlocking global opportunities, gaining a world-class education, &
-          experiencing life from a new perspective. Whether it&apos;s accessing top-ranked universities, building a global network, or enhancing
-          career prospects, the right study destination can shape your future.
-        </p>
-
-        <p className="text-[#86868B] text-base sm:text-lg lg:text-xl leading-relaxed">
-          At Dune, we make this journey seamless. With expert guidance, personalized university selection, & end-to-end support, we ensure you make
-          the best choice for your aspirations. Your dream of studying abroad starts here—with the right partner by your side.
+        The right destination can shape your future, and at Dune, we ensure this journey is seamless. With expert guidance, personalized university selection, and end-to-end support, we help you make the best choice for your aspirations.
         </p>
 
         <div className="space-y-4 mt-8 lg:mt-20 w-full sm:w-[28rem] ml-0 sm:ml-5">

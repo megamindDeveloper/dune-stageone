@@ -61,7 +61,7 @@ const DuneSuccessSlider: React.FC = () => {
                 if (el) videoRefs.current[0] = el;
               }}
               poster="https://res.cloudinary.com/dvandhsai/image/upload/v1748335648/kxne6oj8wfbhy839ints.png" 
-              className="rounded-3xl w-full h-full object-cover" 
+              className=" w-full h-full object-cover" 
               loop 
               playsInline 
               onTimeUpdate={handleTimeUpdate}
@@ -71,7 +71,7 @@ const DuneSuccessSlider: React.FC = () => {
                 type="video/mp4"
               />
             </video>
-            <div className="absolute bottom-4 md:bottom-8 lg:bottom-10 xl:bottom-1 w-full p-4 z-10 flex flex-row justify-end md:justify-between">
+            <div className="absolute bottom-4 md:bottom-8 lg:bottom-10 xl:bottom-2 w-full p-4 xl:p-10 z-10 flex flex-row justify-end md:justify-between">
               <div className="hidden md:block">
                 <svg width="180" height="41" viewBox="0 0 180 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g opacity="0.4">
