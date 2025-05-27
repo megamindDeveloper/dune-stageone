@@ -235,7 +235,7 @@ export default function UsaCard() {
                     <h2 className="text-[28px] font-extrabold text-gray-900">{card.country}</h2>
                     <p className="text-[#86868B] text-xl mt-2 px-2">{card.description}</p>
                   </div>
-                  <button onClick={()=>{setOpen(true);setSelectedCountry(card)}} className="text-[#5D5FDC] text-xl font-extrabold mt-4 inline-block hover:underline">
+                  <button onClick={()=>{setOpen(true);setSelectedCountry(card)}} className="text-[#5D5FDC] cursor-pointer text-xl font-extrabold mt-4 inline-block hover:underline">
                     Learn More
                   </button>
                 </div>
