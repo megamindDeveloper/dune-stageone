@@ -34,7 +34,7 @@ export default function FancyModal({ open, handleClose, data }: FancyModalProps)
           return (
             <li key={index} className="flex items-center justify-between gap-2">
               <h2 className="text-2xl font-semibold text-black">{item?.name}</h2>
-              <Image src={item?.image} alt={data?.alt} width={100} height={100} className=" w-[50%] h-20" />
+              <Image src={item?.image} alt={data?.alt} width={150} height={100} className=" object-cover" />
             </li>
           );
         })}
