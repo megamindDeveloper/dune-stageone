@@ -96,7 +96,6 @@ function FormComponent() {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={`w-full px-4 py-2 md:py-3 border-b border-gray-300 focus:border-purple-500 focus:outline-none text-sm md:text-base ${formik.touched.name && formik.errors.name ? "border-red-500" : ""}`}
-                required
               />
               {formik.touched.name && formik.errors.name && (
                 <p className="text-red-500 text-xs mt-1">{formik.errors.name}</p>
@@ -112,7 +111,6 @@ function FormComponent() {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={`w-full px-4 py-2 md:py-3 border-b border-gray-300 focus:border-purple-500 focus:outline-none text-sm md:text-base ${formik.touched.email && formik.errors.email ? "border-red-500" : ""}`}
-                required
               />
               {formik.touched.email && formik.errors.email && (
                 <p className="text-red-500 text-xs mt-1">{formik.errors.email}</p>
@@ -128,7 +126,6 @@ function FormComponent() {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={`w-full px-4 py-2 md:py-3 border-b border-gray-300 focus:border-purple-500 focus:outline-none text-sm md:text-base ${formik.touched.phone && formik.errors.phone ? "border-red-500" : ""}`}
-                required
               />
               {formik.touched.phone && formik.errors.phone && (
                 <p className="text-red-500 text-xs mt-1">{formik.errors.phone}</p>
@@ -144,7 +141,7 @@ function FormComponent() {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={`w-full px-4 py-2 md:py-3 border-b border-gray-300 focus:border-purple-500 focus:outline-none text-sm md:text-base ${formik.touched.destination && formik.errors.destination ? "border-red-500" : ""}`}
-                required
+                
               />
               {formik.touched.destination && formik.errors.destination && (
                 <p className="text-red-500 text-xs mt-1">{formik.errors.destination}</p>
@@ -160,7 +157,6 @@ function FormComponent() {
                 onBlur={formik.handleBlur}
                 className={`w-full px-4 py-2 md:py-3 border-b border-gray-300 focus:border-purple-500 focus:outline-none resize-none text-sm md:text-base ${formik.touched.enquiry && formik.errors.enquiry ? "border-red-500" : ""}`}
                 maxLength={250}
-                required
               />
               <span className="absolute bottom-2 right-2 text-xs md:text-sm text-gray-400">{charCount}/250</span>
               {formik.touched.enquiry && formik.errors.enquiry && (
