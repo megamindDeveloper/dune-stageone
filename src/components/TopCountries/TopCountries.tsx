@@ -196,7 +196,7 @@ export default function UsaCard() {
           </h3>
         </div>
         <Swiper
-          modules={[Navigation, Autoplay]}
+          modules={[Navigation]}
           loop={true}
           autoplay={{
             delay: 2000, // Time in ms between slides (3 seconds)
@@ -205,7 +205,7 @@ export default function UsaCard() {
           spaceBetween={20}
           slidesPerView={4}
           onSwiper={(swiper) => {
-            swiperRef.current = swiper; 
+            swiperRef.current = swiper; // Store Swiper instance
           }}
           speed={1000}
           breakpoints={{
@@ -235,7 +235,7 @@ export default function UsaCard() {
                     <h2 className="text-[28px] font-extrabold text-gray-900">{card.country}</h2>
                     <p className="text-[#86868B] text-xl mt-2 px-2">{card.description}</p>
                   </div>
-                  <button aria-label="Learn More" onClick={()=>{setOpen(true);setSelectedCountry(card)}} className="text-[#5D5FDC] cursor-pointer text-xl font-extrabold mt-4 inline-block hover:underline">
+                  <button onClick={()=>{setOpen(true);setSelectedCountry(card)}} className="text-[#5D5FDC] cursor-pointer text-xl font-extrabold mt-4 inline-block hover:underline">
                     Learn More
                   </button>
                 </div>
@@ -246,7 +246,6 @@ export default function UsaCard() {
 
         <div className="flex gap-3 justify-end mt-4">
           <button
-          
             ref={prevRef}
             aria-label="Previous slide"
             className="cursor-pointer bg-[#D2D2D7] text-gray-800 p-2 rounded-full shadow-md transition duration-300"
