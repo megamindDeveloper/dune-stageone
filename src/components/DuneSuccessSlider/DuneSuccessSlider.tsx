@@ -112,7 +112,7 @@ const DuneSuccessSlider: React.FC = () => {
               <div className="flex gap-4">
                 <div>
                   <Link href="https://youtu.be/rv0KerNW4QE?si=ObYcwEiaqF0UD90P" target="_blank">
-                    <button aria-label="Watch the Full Video" className="text-white bg-transparent rounded-full border-white border py-2 px-3 text-sm md:text-base md:py-2.5 md:px-4 hidden md:block cursor-pointer">
+                    <button className="text-white bg-transparent rounded-full border-white border py-2 px-3 text-sm md:text-base md:py-2.5 md:px-4 hidden md:block cursor-pointer">
                       Watch the Full Video
                     </button>
                   </Link>
@@ -134,7 +134,7 @@ const DuneSuccessSlider: React.FC = () => {
                       transform="rotate(-90 25 25)"
                     />
                     <foreignObject x="9" y="8" width="32" height="32">
-                      <button  className="w-full h-full cursor-pointer flex items-center justify-center" aria-label={isPlaying ? "Pause" : "Play"}>
+                      <button className="w-full h-full cursor-pointer flex items-center justify-center" aria-label={isPlaying ? "Pause" : "Play"}>
                         {isPlaying ? (
                           <svg
                             width="32"

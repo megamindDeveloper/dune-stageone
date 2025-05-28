@@ -64,7 +64,7 @@ const LimitedPeriod = () => {
               </h2>
             </div>
             <div className="flex items-center">
-              <button aria-label="Book Now for Free" className="bg-black cursor-pointer text-white lg:text-lg px-3   xl:text-[26px] font-bold lg:px-8 lg:py-3 py-2 rounded-4xl">
+              <button className="bg-black cursor-pointer text-white lg:text-lg px-3   xl:text-[26px] font-bold lg:px-8 lg:py-3 py-2 rounded-4xl">
                 Book Now for Free
               </button>
             </div>
