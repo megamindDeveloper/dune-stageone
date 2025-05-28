@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
-import Map, { Marker } from "react-map-gl";
-import "mapbox-gl/dist/mapbox-gl.css";
 import { ClipLoader } from "react-spinners";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import Image from "next/image";
+import mapIMage from "../../../public/formMap/Frame 3384456.avif";
 
 function FormComponent() {
   const [charCount, setCharCount] = useState<number>(0);
@@ -74,29 +74,13 @@ function FormComponent() {
     <div className="min-h-screen bg-[#FEFEFE] flex items-center justify-center p-4">
       <div className="w-full max-w-6xl bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
         <div className="md:w-1/2 h-[400px] md:h-[800px] relative">
-          <Map
-            mapboxAccessToken="pk.eyJ1IjoiamFtc2hhZDEiLCJhIjoiY2xrOXNsdTR0MDBoZDNkbXcxNXc1YnYybCJ9.7mKn2TGyJPQ5p1cIIss9ow"
-            initialViewState={{
-              longitude: 74.8495,
-              latitude: 12.8778,
-              zoom: 17,
-            }}
-            style={{ width: "none", height: "95%", margin: "15px", borderRadius: "15px" }}
-            mapStyle="mapbox://styles/mapbox/streets-v11"
-            scrollZoom={false}
-            doubleClickZoom={false}
-            touchZoomRotate={false}
-            keyboard={false}
-            dragPan={false}
-            dragRotate={false}
-          >
-            <Marker
-              longitude={74.84957085771414}
-              latitude={12.877806124395859}
-              color="#7c3aed"
-              onClick={() => window.open("https://maps.app.goo.gl/QdXWXngg1nVq8Vcy7?g_st=aw", "_blank")}
-            />
-          </Map>
+          <Image
+            src={mapIMage}
+            alt="Map Image"
+            fill
+            style={{ objectFit: "cover", margin: "15px", borderRadius: "15px" }}
+            onClick={() => window.open("https://maps.app.goo.gl/QdXWXngg1nVq8Vcy7?g_st=aw", "_blank")}
+          />
         </div>
 
         <div className="w-full md:w-1/2 p-6 md:p-8 flex flex-col justify-center md:ml-8">
