@@ -14,7 +14,7 @@ export default function UniversityPartners() {
   );
 }
 
-const images = Array.from({ length: 50 }, (_, i) => ({
+const images = Array.from({ length: 37 }, (_, i) => ({
   imgsrc: `/partnersLogo/${i + 1}.png`,
 }));
 
