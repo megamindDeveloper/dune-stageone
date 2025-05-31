@@ -29,8 +29,8 @@ export function WhyChooseSection() {
               />
             </div>
             <div>
-              <h3 className="text-[#86868B] text-lg sm:text-xl font-extrabold">Personalized Support</h3>
-              <p className="text-[#86868B] text-base sm:text-xl">Tailored guidance from university selection to visa approval.</p>
+              <h3 className="text-[#86868B] text-lg sm:text-xl font-extrabold">Global Admissions</h3>
+              <p className="text-[#86868B] text-base sm:text-xl">400+ global admissions – turning students’ dreams of studying abroad into reality.</p>
             </div>
           </div>
 
@@ -45,8 +45,8 @@ export function WhyChooseSection() {
               />
             </div>
             <div>
-              <h3 className="text-[#86868B] text-lg sm:text-xl font-extrabold">Hassle-Free Process</h3>
-              <p className="text-[#86868B] text-base sm:text-xl">Expert handling of applications, scholarships, & visas.</p>
+              <h3 className="text-[#86868B] text-lg sm:text-xl font-extrabold">University Representation</h3>
+              <p className="text-[#86868B] text-base sm:text-xl">Representing 200 + universities across more than 30 countries.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
