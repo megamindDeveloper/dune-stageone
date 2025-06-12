@@ -26,10 +26,10 @@ const Footer = () => {
       </div>
       <div className="flex flex-col md:flex-row justify-between items-center mx-6 md:mx-24 pt-6 md:pt-9 pb-8 md:pb-14">
         <div className="flex justify-center md:justify-start gap-4 mb-4 md:mb-0">
-          <Link target="_blank" href="https://www.instagram.com/studymetro_mangalore?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><Inatagram /></Link>
-          <Link target="_blank" href="https://www.instagram.com/studymetro_mangalore?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><LinkedIn /></Link>
-          <Link target="_blank" href="https://www.facebook.com/studymetro.abroad"><Meta /></Link>
-          <Link target="_blank" href="https://www.youtube.com/channel/UC_EjChebrWmyKsId3cMt-Rw"><Yt /></Link>
+          <Link target="_blank" href="https://www.instagram.com/dunestudymetro_mangalore?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><Inatagram /></Link>
+          <Link target="_blank" href="https://www.linkedin.com/company/study-metro-mangalore/"><LinkedIn /></Link>
+          <Link target="_blank" href="https://www.facebook.com/share/1EcdrNpkNP/?mibextid=wwXIfr"><Meta /></Link>
+          <Link target="_blank" href="https://youtube.com/@dunestudyabroad?si=CTCfsXeNVSpuJqOQ"><Yt /></Link>
         </div>
         <div className="text-[#9583FE] text-[13px] text-center md:text-left mb-4 md:mb-0">
           <p>
